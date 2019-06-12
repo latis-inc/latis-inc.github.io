@@ -2725,10 +2725,10 @@ html {
   width: device-width; }
 @font-face {
   font-family: "Rubik";
-  src: url("assets/fonts/rubik/Rubik.woff") format("woff"); }
+  src: url("../fonts/rubik/Rubik.woff") format("woff"); }
 @font-face {
   font-family: "Roboto";
-  src: url("assets/fonts/Roboto/Roboto-Regular.woff") format("woff"); }
+  src: url("../fonts/Roboto/Roboto-Regular.woff") format("woff"); }
 body {
   overflow-x: hidden; }
 
