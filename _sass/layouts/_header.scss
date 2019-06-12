@@ -1,0 +1,191 @@
+@font-face{
+    font-family: "Rubik";
+    src:  url("/fonts/rubik/Rubik.woff") format("woff");
+}
+
+@font-face{
+    font-family: "Roboto";
+    src:  url("/fonts/Roboto/Roboto-Regular.woff") format("woff");
+    
+}
+
+body{
+    /*font-family: 'Rubik', sans-serif;*/
+    overflow-x: hidden;
+}
+
+@mixin flexbox($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin placeholder($color){
+    &::-webkit-input-placeholder {color: $color; font-weight: 300;}
+    &::-moz-placeholder          {color: $color; font-weight: 300;}/* Firefox 19+ */
+    &:-moz-placeholder           {color: $color; font-weight: 300;}/* Firefox 18- */
+    &:-ms-input-placeholder      {color: $color; font-weight: 300;}
+}
+
+@mixin fonts($size, $weight, $height, $color){
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    color: $color;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.wrap {
+    @include make-container();
+   /* max-width: 1920px !important;*/
+   /*max-width: 1140px !important;*/
+    padding: 0;
+    margin: 0 auto;
+    border-width: 0px;
+
+    .header{
+        width: 100%;
+        background-color: #ffffff;
+        -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+        .header__flex-container {
+            @include make-row();
+            justify-content: center;
+            max-width: 1140px;
+            height: 70px;
+            margin: 0 auto;
+            margin-bottom: 3px;
+
+            .logo{
+                @include make-col-ready();
+                @include media-breakpoint-up(md) {
+                    @include make-col(5);
+                }
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                /*border: 1px solid yellow;*/
+                @include flexbox(column, center, flex-start);
+
+                .logo__item{
+                    width: 120px;
+                    height: auto;
+                    position: relative;
+                    left: -9px;
+                    padding: 0;
+                    /*border: 1px solid yellow;*/
+                }
+            }
+
+            .navbar{
+                @include make-col-ready();
+                @include media-breakpoint-up(md) {
+                    @include make-col(5);
+                }
+                margin: 0;
+                padding: 0;
+                /*border: 1px solid yellow;*/
+                @include flexbox(column, center, flex-start);
+
+                .nav{
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    @include flexbox(row, flex-end, center);
+
+                    .nav__item{
+                        margin-left: 68px;
+                        padding: 0;
+                        list-style: none;
+
+                        &:first-child{
+                            margin: 0;
+                        }
+
+                        .nav__link{
+                            font-size: 12px;
+                            line-height: 24px;
+                            font-weight: 300;
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+            
+            .header__burger{
+                display: none;
+                .header__btn-mobile-menu{
+                    width: 30px;
+                    height: 30px;
+                    position: relative;
+                    cursor: pointer;
+                    
+
+                    .header__menu-global {
+                        height: 2px;
+                        width: 30px;
+                        position: absolute;
+                        left: 0;
+                        backface-visibility: hidden;
+                        background-color: #3B2552;
+                        transition: 0.55s;
+                        @include border-radius(5px);
+                    }
+
+                    .header_menu-top {
+                        top: 9px;
+                    }
+                    .header_menu-middle {
+                        top: 14px;
+                    }
+                    .header_menu-bottom {
+                        top: 19px;
+                    }
+                    .menu-top-click {
+                       backface-visibility: hidden;
+                       top: 12px;
+                       transform: rotate(50deg);
+                       transition: 0.55s 0.5s;
+                    }   
+                    .menu-middle-click {
+                        opacity: 0;
+                    }
+                    .menu-bottom-click {
+                       backface-visibility: hidden;
+                       top: 12px;
+                       transform: rotate(-410deg);
+                       transition: 0.55s 0.5s;
+                    }
+                }
+            }
+        }   
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
