@@ -70,8 +70,7 @@
 	}
 	
 	.section_one_style{
-		padding: 41px 0 0px 0;
-		padding-bottom:21px;
+		padding: 118px 0 21px 0;
 		.section__item:first-child{
 			@include make-col(11);
 			@include flexbox(column, flex-start, center);
