@@ -73,24 +73,36 @@
 		.section__item:first-child{
 			@include make-col(11);
 			@include flexbox(column, flex-start, center);
-            padding: 45px 0 6px 0;
+            padding: 42px 0 0px 0;
+            border: 1px solid black;
 
             .section__title{
             	text-align: center;
+            	padding: 0;
+            	margin: 0;
+            	border: 1px solid red;
             }
 
             .section__call{
             	text-align: center;
-            	margin-bottom: 18px;
+            	/*margin-bottom: 18px;*/
+            	border: 1px solid blue;
+ 				margin: 0;
             }
 
             .section__info{
             	text-align: center;
+            	border: 1px solid blue;
+            	padding: 0;
+            	margin: 0;
             }
 
             .section__inner-wrap-img{
  				width: 100%;
  				@include flexbox(row, center, flex-start);
+ 				border: 1px solid yellow;
+ 				padding: 0;
+ 				margin: 0;
 
  			}
 
@@ -100,8 +112,8 @@
 
 				.section__input_section_one{
 					width: 100%;
-					margin-top: -18px;
-					margin-bottom: 5px;
+					border: 1px solid black;
+
 				}
 
 				.section__btn_section_one{
