@@ -149,7 +149,7 @@ body{
                         backface-visibility: hidden;
                         background-color: #3B2552;
                         transition: 0.55s;
-                        @include border-radius(5px);
+                        @include border-radius(2px);
                     }
 
                     .header_menu-top {
