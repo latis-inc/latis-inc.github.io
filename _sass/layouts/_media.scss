@@ -246,8 +246,7 @@
 	}
 
 	.section_four_style{
-			padding: 0;
-			padding: 33px 0 50px 0;
+			padding: 37px 0 40px 0;
 		.section__item:first-child{
 			@include make-col(11);
 			@include flexbox(column, flex-start, center);
@@ -255,9 +254,13 @@
 
 			.section__polygon{
             	display: block;
+            	padding: 0;
+            	margin: 0 0 17px 0;
         	}
 
         	.section__inner-wrap-img{
+        		padding: 0;
+            	margin: 0 0 20px 0;
         		width: 100%;
  				@include flexbox(row, flex-end, flex-start);
 
@@ -265,14 +268,28 @@
  					max-width: 100%;
  					height: auto;
  				}
+ 				border: 1px solid blue;
         	}
 
         	.section__title{
+        		padding: 0;
+            	margin: 0 0 20px 0;
+            	border: 1px solid black;
         		text-align: center;
         	}
 
         	.section__info{
+        		padding: 0;
+            	margin: 0 0 31px 0;
+            	border: 1px solid black;
         		text-align: center;
+
+        	}
+
+        	.section__answer{
+        		padding: 0;
+        		margin: 0 0 9px 0;
+        		border: 1px solid blue;
         	}
 		}
 
