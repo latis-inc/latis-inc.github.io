@@ -110,7 +110,7 @@
 				@include flexbox(column, flex-start, center);
 
 				.section__input_section_one{
-					padding: 0;
+					padding: 0 0 0 10px;
  					margin: 0 0 11px 0;
 					width: 100%;
 
@@ -133,19 +133,38 @@
 
 
 	.section_two_style{
-		padding: 57px 0 23px 0;
+		padding: 57px 0 40px 0;
 		.section__item:first-child{
+			padding: 0;
+			margin: 0;
 			@include make-col(11);
             @include flexbox(column, flex-start, center);
-            padding: 0;
+            border: 1px solid black;
+
+            .section__polygon{
+            	padding: 0;
+				margin: 0 0 17px 0;
+            }
+
+            .section__title{
+            	padding: 0;
+				margin: 0 0 16px 0;
+				border: 1px solid black;
+            }
 			
 			.section__info{
+				padding: 0;
+				margin: 0 0 25px 0;
 				text-align: center;
+				border: 1px solid blue;
 			}
 
             .section__inner-wrap-img{
+            	padding: 0;
+				margin: 0;
  				width: 100%;
  				@include flexbox(row, flex-end, flex-start);
+ 				border: 1px solid black;
 
 
  				.section__components-mobile{
@@ -153,6 +172,12 @@
  					height: auto;
  				}         	
 
+            }
+
+            .section__answer{
+            	padding: 0;
+            	margin: 0;
+            	border: 1px solid black;
             }
 		}
 
