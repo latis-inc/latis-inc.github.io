@@ -3693,7 +3693,7 @@ input, a, button, select, div, textarea {
         border: 1px solid blue; }
       .section_two_style .section__item:first-child .section__inner-wrap-img {
         padding: 0;
-        margin: 0 0 20px 0;
+        margin: 0 0 13px 0;
         width: 100%;
         display: flex;
         flex-direction: row;
