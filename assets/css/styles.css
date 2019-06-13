@@ -3772,25 +3772,21 @@ input, a, button, select, div, textarea {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        align-items: flex-start;
-        border: 1px solid blue; }
+        align-items: flex-start; }
         .section_four_style .section__item:first-child .section__inner-wrap-img .section__components-mobile {
           max-width: 100%;
           height: auto; }
       .section_four_style .section__item:first-child .section__title {
         padding: 0;
         margin: 0 0 20px 0;
-        border: 1px solid black;
         text-align: center; }
       .section_four_style .section__item:first-child .section__info {
         padding: 0;
         margin: 0 0 31px 0;
-        border: 1px solid black;
         text-align: center; }
       .section_four_style .section__item:first-child .section__answer {
         padding: 0;
-        margin: 0 0 9px 0;
-        border: 1px solid blue; }
+        margin: 0 0 9px 0; }
     .section_four_style .section__item:last-child {
       position: inherit; }
       .section_four_style .section__item:last-child .section__group {
