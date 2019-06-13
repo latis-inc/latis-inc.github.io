@@ -3600,7 +3600,8 @@ input, a, button, select, div, textarea {
           margin-left: 0 !important;
           text-align: center;
           text-transform: uppercase;
-          cursor: pointer; }
+          cursor: pointer;
+          border-top: 1px solid #C2CFE0; }
           .header .header__flex-container .navbar .nav .nav__item .nav__link {
             font-family: 'Roboto', sans-serif !important;
             font-size: 18px !important;
