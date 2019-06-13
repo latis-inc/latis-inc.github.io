@@ -3621,8 +3621,7 @@ input, a, button, select, div, textarea {
       align-items: flex-end; }
 
   .section_one_style {
-    padding: 41px 0 0px 0;
-    padding-bottom: 21px; }
+    padding: 118px 0 21px 0; }
     .section_one_style .section__item:first-child {
       flex: 0 0 91.6666666667%;
       max-width: 91.6666666667%;
