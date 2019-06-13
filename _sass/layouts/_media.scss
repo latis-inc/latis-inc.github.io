@@ -2,6 +2,8 @@
 
 	.header{
 		position: fixed;
+		top:0;
+		left: 0;
 		z-index: 999;
 		.header__flex-container{
 
@@ -289,7 +291,11 @@
 		}
 	}
 
-
+/*страница сингл*/
+.section__single{
+	margin: 0;
+	margin: 154px 0 80px 0;
+}
 
 
 
@@ -337,6 +343,14 @@
 			@include make-col(7);
 		}
 	}
+
+	/*.section_page_blog{
+		.section__flex{
+			.section__post-blog{
+				@include make-col(3);
+			}
+		}
+	}*/
 
 }
 
