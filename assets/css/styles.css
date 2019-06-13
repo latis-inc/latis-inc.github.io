@@ -2724,11 +2724,17 @@ html {
 @-ms-viewport {
   width: device-width; }
 @font-face {
+  font-family: "Rubik-Bold";
+  src: url("../fonts/Rubik/Rubik-Bold.ttf") format("truetype"); }
+@font-face {
   font-family: "Rubik";
-  src: url("../fonts/rubik/Rubik.woff") format("woff"); }
+  src: url("../fonts/Rubik/Rubik-Regular.ttf") format("truetype"); }
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto/Roboto-Regular.woff") format("woff"); }
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype"); }
 body {
   overflow-x: hidden; }
 
@@ -2813,9 +2819,10 @@ body {
             .wrap .header .header__flex-container .navbar .nav .nav__item:first-child {
               margin: 0; }
             .wrap .header .header__flex-container .navbar .nav .nav__item .nav__link {
+              font-family: 'Roboto-Light', sans-serif;
               font-size: 12px;
-              line-height: 24px;
               font-weight: 300;
+              line-height: 24px;
               color: #000000; }
       .wrap .header .header__flex-container .header__burger {
         display: none; }
@@ -2890,6 +2897,7 @@ body {
         .footer .footer__flex-container .footer__item:last-child .footer__link {
           margin-left: 34px; }
       .footer .footer__flex-container .footer__item .footer__link {
+        font-family: 'Roboto-Light', sans-serif;
         font-size: 10px;
         font-weight: 300;
         line-height: 24px;
@@ -2942,22 +2950,24 @@ input, a, button, select, div, textarea {
   max-width: 1140px;
   padding: 0;
   margin: 0 auto;
-  justify-content: center;
-  /*border: 1px solid black;*/ }
+  justify-content: center; }
   .section__flex .section__title {
     margin-bottom: 22px;
+    font-family: 'Rubik-Bold', sans-serif;
     font-size: 25px;
     font-weight: 700;
     line-height: auto;
     color: #3B2552; }
   .section__flex .section__call {
     margin-bottom: 27px;
+    font-family: 'Roboto-Light', sans-serif;
     font-size: 18px;
     font-weight: 300;
     line-height: auto;
     color: #7AACDE; }
   .section__flex .section__info {
     margin-bottom: 35px;
+    font-family: 'Roboto-Light', sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
@@ -2968,6 +2978,7 @@ input, a, button, select, div, textarea {
     background-color: #7AACDE;
     border: 1px solid #7AACDE;
     cursor: pointer;
+    font-family: 'Rubik-Bold', sans-serif;
     font-size: 12px;
     font-weight: 700;
     line-height: 24px;
@@ -2982,12 +2993,13 @@ input, a, button, select, div, textarea {
     height: 70px;
     margin-bottom: 13px; }
   .section__flex .section__answer {
+    margin-top: 30px;
+    margin-bottom: 8px;
+    font-family: 'Roboto-Light', sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
-    color: #f000000;
-    margin-top: -5px;
-    margin-bottom: 8px; }
+    color: #f000000; }
 
 .section_one_style {
   /*height: 400px;*/
@@ -3012,6 +3024,11 @@ input, a, button, select, div, textarea {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px;
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #f000000;
     font-size: 12px;
     font-weight: 300;
     line-height: 24px;
@@ -3038,6 +3055,7 @@ input, a, button, select, div, textarea {
     border: 1px solid #3B2552;
     cursor: pointer;
     white-space: nowrap;
+    font-family: 'Rubik-Bold', sans-serif;
     font-size: 12px;
     font-weight: 700;
     line-height: 24px;
@@ -3232,6 +3250,11 @@ input, a, button, select, div, textarea {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px;
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #f000000;
     font-size: 12px;
     font-weight: 300;
     line-height: 24px;
@@ -3257,6 +3280,7 @@ input, a, button, select, div, textarea {
     border: 1px solid #3B2552;
     margin-left: 9px;
     cursor: pointer;
+    font-family: 'Rubik-Bold', sans-serif;
     font-size: 12px;
     font-weight: 700;
     line-height: 24px;
