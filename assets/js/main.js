@@ -5,17 +5,6 @@ $('.section__btn_contact_us').on('click', function(e){
   e.preventDefault();
 });
 
-$('.section__btn_section_one').on("submit", function(e) {
-   e.preventDefault();
-  $.ajax({
-    url: "https://formspree.io/chermanderX@yandex.ru", 
-    method: "POST",
-    data: {message: "hello!"},
-    dataType: "json"
-  }).done(function() {
-     alert(1);
-  });
-});
 
 
 });
