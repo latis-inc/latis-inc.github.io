@@ -2960,14 +2960,14 @@ input, a, button, select, div, textarea {
     font-family: 'Rubik-Bold', sans-serif;
     font-size: 25px;
     font-weight: 700;
-    line-height: auto;
+    line-height: 30px;
     color: #3B2552; }
   .section__flex .section__call {
     margin-bottom: 27px;
     font-family: 'Roboto-Light', sans-serif;
     font-size: 18px;
     font-weight: 300;
-    line-height: auto;
+    line-height: 21px;
     color: #7AACDE; }
   .section__flex .section__info {
     margin-bottom: 35px;
@@ -3632,7 +3632,7 @@ input, a, button, select, div, textarea {
     .section_one_style .section__item:first-child .section__title {
       text-align: center;
       padding: 0;
-      margin: 0;
+      margin: 0 0 12px 0;
       border: 1px solid red; }
     .section_one_style .section__item:first-child .section__call {
       text-align: center;
