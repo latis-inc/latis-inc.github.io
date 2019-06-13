@@ -3658,7 +3658,7 @@ input, a, button, select, div, textarea {
         justify-content: flex-start;
         align-items: center; }
         .section_one_style .section__item:first-child .section__form-email_section_one .section__input_section_one {
-          padding: 0;
+          padding: 0 0 0 10px;
           margin: 0 0 11px 0;
           width: 100%; }
         .section_one_style .section__item:first-child .section__form-email_section_one .section__btn_section_one {
@@ -3668,26 +3668,45 @@ input, a, button, select, div, textarea {
       display: none; }
 
   .section_two_style {
-    padding: 57px 0 23px 0; }
+    padding: 57px 0 40px 0; }
     .section_two_style .section__item:first-child {
+      padding: 0;
+      margin: 0;
       flex: 0 0 91.6666666667%;
       max-width: 91.6666666667%;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      padding: 0; }
+      border: 1px solid black; }
+      .section_two_style .section__item:first-child .section__polygon {
+        padding: 0;
+        margin: 0 0 17px 0; }
+      .section_two_style .section__item:first-child .section__title {
+        padding: 0;
+        margin: 0 0 16px 0;
+        border: 1px solid black; }
       .section_two_style .section__item:first-child .section__info {
-        text-align: center; }
+        padding: 0;
+        margin: 0 0 25px 0;
+        text-align: center;
+        border: 1px solid blue; }
       .section_two_style .section__item:first-child .section__inner-wrap-img {
+        padding: 0;
+        margin: 0;
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        align-items: flex-start; }
+        align-items: flex-start;
+        border: 1px solid black; }
         .section_two_style .section__item:first-child .section__inner-wrap-img .section__components-mobile {
           max-width: 100%;
           height: auto; }
+      .section_two_style .section__item:first-child .section__answer {
+        padding: 0;
+        margin: 0;
+        border: 1px solid black; }
     .section_two_style .section__item:last-child .section__components {
       display: none; }
     .section_two_style .section__item:last-child .section__polygon-light {
