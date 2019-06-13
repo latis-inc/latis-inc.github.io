@@ -319,6 +319,7 @@ input, a, button, select, div, textarea{
     }
 
     .section__call{
+        font-family: 'Roboto-Thin', sans-serif;
         text-align: center;
         @include fonts(18px, 100, 18px, #3B2552);
     }
@@ -395,12 +396,14 @@ input, a, button, select, div, textarea{
         }
 
         .popup__title{
+            font-family: 'Rubik-Bold', sans-serif;
             @include fonts(18px, 700, auto, #3B2552);
             text-align: center;
             margin-bottom: 5px;
         }
 
         .popup__info{
+            font-family: 'Roboto-Light', sans-serif;
             @include fonts(14px, 300, 24px, #000000);
             text-align: center;
             margin-bottom: 5px;
@@ -413,6 +416,7 @@ input, a, button, select, div, textarea{
             @include border-radius(5px);
             border-width: 0px;
             text-transform: uppercase;
+            font-family: 'Rubik-Bold', sans-serif;
             @include fonts(12px, 700, 24px, #ffffff);
             cursor: pointer;
 
