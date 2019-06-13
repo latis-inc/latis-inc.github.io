@@ -27,7 +27,8 @@
             }
 
             .footer__link{
-            	 @include fonts(10px, 300, 24px, #FFFFFF);
+                font-family: 'Roboto-Light', sans-serif;
+            	@include fonts(10px, 300, 24px, #FFFFFF);
             }
     	}
     }

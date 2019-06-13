@@ -53,20 +53,22 @@ input, a, button, select, div, textarea{
     padding: 0;
     margin: 0 auto;
     justify-content: center;
-    /*border: 1px solid black;*/
 
     .section__title{
         margin-bottom: 22px;
+        font-family: 'Rubik-Bold', sans-serif;
         @include fonts(25px, 700, auto, #3B2552);
     }
 
     .section__call{
         margin-bottom: 27px;
+        font-family: 'Roboto-Light', sans-serif;
         @include fonts(18px, 300, auto, #7AACDE);
 }
 
     .section__info{
         margin-bottom: 35px;
+        font-family: 'Roboto-Light', sans-serif;
         @include fonts(14px, 300, 24px, #000000);
     }
 
@@ -76,6 +78,7 @@ input, a, button, select, div, textarea{
         background-color: #7AACDE;
         border: 1px solid #7AACDE;
         cursor: pointer;
+        font-family: 'Rubik-Bold', sans-serif;
         @include fonts(12px, 700, 24px, #FFFFFF);
         text-transform: uppercase;
         @include border-radius(5px);
@@ -88,9 +91,10 @@ input, a, button, select, div, textarea{
 }
 
     .section__answer{
-        @include fonts(14px, 300, 24px, #f000000);
-        margin-top: -5px;
+        margin-top: 30px;
         margin-bottom: 8px;
+        font-family: 'Roboto-Light', sans-serif;
+        @include fonts(14px, 300, 24px, #f000000);
     }  
 }
 
@@ -115,6 +119,8 @@ input, a, button, select, div, textarea{
         padding: 0px 10px 0 10px;
         border: 1px solid #7AACDE;
         @include border-radius(5px);
+        font-family: 'Roboto-Light', sans-serif;
+        @include fonts(14px, 300, 24px, #f000000);    
         @include fonts(12px, 300, 24px, #7CAADD);
         @include placeholder(#7CAADD);
     }
@@ -127,6 +133,7 @@ input, a, button, select, div, textarea{
         border: 1px solid #3B2552;
         cursor: pointer;
         white-space: nowrap;
+        font-family: 'Rubik-Bold', sans-serif;
         @include fonts(12px, 700, 24px, #FFFFFF);
         text-transform: uppercase;
         @include border-radius(5px);
@@ -326,6 +333,8 @@ input, a, button, select, div, textarea{
         padding: 0px 10px 0 10px;
         border: 1px solid #ffffff;
         @include border-radius(5px);
+        font-family: 'Roboto-Light', sans-serif;
+        @include fonts(14px, 300, 24px, #f000000);
         @include fonts(12px, 300, 24px, #3B2552);
         @include placeholder(#3B2552);
     }
@@ -337,6 +346,7 @@ input, a, button, select, div, textarea{
         border: 1px solid #3B2552;
         margin-left: 9px;
         cursor: pointer;
+        font-family: 'Rubik-Bold', sans-serif;
         @include fonts(12px, 700, 24px, #FFFFFF);
         text-transform: uppercase;
         @include border-radius(5px);

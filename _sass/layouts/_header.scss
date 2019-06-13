@@ -1,11 +1,22 @@
 @font-face{
+    font-family: "Rubik-Bold";
+    src:  url("../fonts/Rubik/Rubik-Bold.ttf") format("truetype");
+}
+
+@font-face{
     font-family: "Rubik";
-    src:  url("../fonts/rubik/Rubik.woff") format("woff");
+    src:  url("../fonts/Rubik/Rubik-Regular.ttf") format("truetype");
 }
 
 @font-face{
     font-family: "Roboto";
-    src:  url("../fonts/Roboto/Roboto-Regular.woff") format("woff");
+    src:  url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+    
+}
+
+@font-face{
+    font-family: "Roboto-Light";
+    src:  url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
     
 }
 
@@ -108,10 +119,8 @@ body{
                         }
 
                         .nav__link{
-                            font-size: 12px;
-                            line-height: 24px;
-                            font-weight: 300;
-                            color: #000000;
+                            font-family: 'Roboto-Light', sans-serif;
+                            @include fonts(12px, 300, 24px, #000000);
                         }
                     }
                 }
