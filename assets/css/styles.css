@@ -3693,7 +3693,7 @@ input, a, button, select, div, textarea {
         border: 1px solid blue; }
       .section_two_style .section__item:first-child .section__inner-wrap-img {
         padding: 0;
-        margin: 0;
+        margin: 0 0 20px 0;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -3705,7 +3705,7 @@ input, a, button, select, div, textarea {
           height: auto; }
       .section_two_style .section__item:first-child .section__answer {
         padding: 0;
-        margin: 0;
+        margin: 0 0 9px 0;
         border: 1px solid black; }
     .section_two_style .section__item:last-child .section__components {
       display: none; }
