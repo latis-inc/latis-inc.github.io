@@ -15,7 +15,6 @@ $('.section__btn_section_one').on("submit", function(e) {
   }).done(function() {
      alert(1);
   });
-  return false;
 });
 
 
