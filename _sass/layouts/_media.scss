@@ -73,7 +73,7 @@
 		.section__item:first-child{
 			@include make-col(11);
 			@include flexbox(column, flex-start, center);
-            padding: 38px 0 0px 0;
+            padding: 41px 0 0px 0;
             border: 1px solid black;
 
             .section__title{
