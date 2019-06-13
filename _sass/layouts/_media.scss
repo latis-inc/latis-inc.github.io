@@ -74,28 +74,23 @@
 		.section__item:first-child{
 			@include make-col(11);
 			@include flexbox(column, flex-start, center);
-            border: 1px solid black;
 
             .section__title{
             	text-align: center;
             	padding: 0;
             	margin: 0 0 12px 0;
-            	border: 1px solid red;
             }
 
             .section__call{
             	margin: 0 0 31px 0;
             	padding:0;
             	text-align: center;
-            	/*margin-bottom: 18px;*/
-            	border: 1px solid blue;
             }
 
             .section__info{
             	padding: 0;
             	margin: 0 0 26px 0;
             	text-align: center;
-            	border: 1px solid blue;
             }
 
             .section__inner-wrap-img{
@@ -103,7 +98,6 @@
  				margin: 0 0 31px 0;
  				width: 100%;
  				@include flexbox(row, center, flex-start);
- 				border: 1px solid yellow;
 
  				.section__img_section_one{
  					position: static;
@@ -119,7 +113,6 @@
 					padding: 0;
  					margin: 0 0 11px 0;
 					width: 100%;
-					border: 1px solid black;
 
 				}
 
