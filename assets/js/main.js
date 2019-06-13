@@ -12,6 +12,11 @@ $('.section__btn_section_one').on("submit", function(e) {
     method: "POST",
     data: {message: "hello!"},
     dataType: "json"
-})
+  }).done(function() {
+     alert(1);
+  });
+  return false;
+});
+
 
 });
