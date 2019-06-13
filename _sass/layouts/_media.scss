@@ -67,7 +67,7 @@
 		.section__item:first-child{
 			@include make-col(11);
 			@include flexbox(column, flex-start, center);
-            padding: 52px 0 21px 0;
+            padding: 45px 0 6px 0;
 
             .section__title{
             	text-align: center;
@@ -75,6 +75,7 @@
 
             .section__call{
             	text-align: center;
+            	margin-bottom: 18px;
             }
 
             .section__info{
@@ -93,6 +94,7 @@
 
 				.section__input_section_one{
 					width: 100%;
+					margin-top: -18px;
 					margin-bottom: 5px;
 				}
 
