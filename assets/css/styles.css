@@ -3620,58 +3620,60 @@ input, a, button, select, div, textarea {
       justify-content: center;
       align-items: flex-end; }
 
-  .section_one_style .section__item:first-child {
-    flex: 0 0 91.6666666667%;
-    max-width: 91.6666666667%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+  .section_one_style {
     padding: 41px 0 0px 0;
-    border: 1px solid black; }
-    .section_one_style .section__item:first-child .section__title {
-      text-align: center;
-      padding: 0;
-      margin: 0 0 12px 0;
-      border: 1px solid red; }
-    .section_one_style .section__item:first-child .section__call {
-      margin: 0 0 31px 0;
-      padding: 0;
-      text-align: center;
-      /*margin-bottom: 18px;*/
-      border: 1px solid blue; }
-    .section_one_style .section__item:first-child .section__info {
-      padding: 0;
-      margin: 0 0 26px 0;
-      text-align: center;
-      border: 1px solid blue; }
-    .section_one_style .section__item:first-child .section__inner-wrap-img {
-      padding: 0;
-      margin: 0 0 31px 0;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: flex-start;
-      border: 1px solid yellow; }
-      .section_one_style .section__item:first-child .section__inner-wrap-img .section__img_section_one {
-        position: static; }
-    .section_one_style .section__item:first-child .section__form-email_section_one {
-      width: 100%;
+    padding-bottom: 21px; }
+    .section_one_style .section__item:first-child {
+      flex: 0 0 91.6666666667%;
+      max-width: 91.6666666667%;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: center; }
-      .section_one_style .section__item:first-child .section__form-email_section_one .section__input_section_one {
+      align-items: center;
+      border: 1px solid black; }
+      .section_one_style .section__item:first-child .section__title {
+        text-align: center;
         padding: 0;
         margin: 0 0 12px 0;
+        border: 1px solid red; }
+      .section_one_style .section__item:first-child .section__call {
+        margin: 0 0 31px 0;
+        padding: 0;
+        text-align: center;
+        /*margin-bottom: 18px;*/
+        border: 1px solid blue; }
+      .section_one_style .section__item:first-child .section__info {
+        padding: 0;
+        margin: 0 0 26px 0;
+        text-align: center;
+        border: 1px solid blue; }
+      .section_one_style .section__item:first-child .section__inner-wrap-img {
+        padding: 0;
+        margin: 0 0 31px 0;
         width: 100%;
-        border: 1px solid black; }
-      .section_one_style .section__item:first-child .section__form-email_section_one .section__btn_section_one {
-        margin: 0;
-        width: 100%; }
-  .section_one_style .section__item:last-child .section__img_section_one {
-    display: none; }
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        border: 1px solid yellow; }
+        .section_one_style .section__item:first-child .section__inner-wrap-img .section__img_section_one {
+          position: static; }
+      .section_one_style .section__item:first-child .section__form-email_section_one {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center; }
+        .section_one_style .section__item:first-child .section__form-email_section_one .section__input_section_one {
+          padding: 0;
+          margin: 0 0 12px 0;
+          width: 100%;
+          border: 1px solid black; }
+        .section_one_style .section__item:first-child .section__form-email_section_one .section__btn_section_one {
+          margin: 0;
+          width: 100%; }
+    .section_one_style .section__item:last-child .section__img_section_one {
+      display: none; }
 
   .section_two_style {
     padding: 57px 0 23px 0; }
