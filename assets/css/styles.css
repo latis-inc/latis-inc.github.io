@@ -3627,7 +3627,7 @@ input, a, button, select, div, textarea {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 42px 0 0px 0;
+    padding: 38px 0 0px 0;
     border: 1px solid black; }
     .section_one_style .section__item:first-child .section__title {
       text-align: center;
