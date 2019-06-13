@@ -3596,9 +3596,8 @@ input, a, button, select, div, textarea {
         z-index: 999; }
         .header .header__flex-container .navbar .nav .nav__item {
           width: 100%;
-          padding: 10px 0px !important;
+          padding: 21px 0px !important;
           margin-left: 0 !important;
-          text-indent: 15px;
           text-align: center;
           text-transform: uppercase;
           cursor: pointer; }
