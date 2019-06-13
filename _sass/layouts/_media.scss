@@ -105,6 +105,10 @@
  				@include flexbox(row, center, flex-start);
  				border: 1px solid yellow;
 
+ 				.section__img_section_one{
+ 					position: static;
+ 				}
+
  			}
 
  			.section__form-email_section_one{
