@@ -3666,7 +3666,7 @@ input, a, button, select, div, textarea {
         align-items: center; }
         .section_one_style .section__item:first-child .section__form-email_section_one .section__input_section_one {
           padding: 0;
-          margin: 0 0 12px 0;
+          margin: 0 0 11px 0;
           width: 100%;
           border: 1px solid black; }
         .section_one_style .section__item:first-child .section__form-email_section_one .section__btn_section_one {
