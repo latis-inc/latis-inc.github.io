@@ -3592,7 +3592,7 @@ input, a, button, select, div, textarea {
         display: flex;
         flex-direction: column !important;
         justify-content: flex-start !important;
-        align-items: flex-start !important;
+        align-items: center !important;
         z-index: 999; }
         .header .header__flex-container .navbar .nav .nav__item {
           width: 100%;
@@ -3602,7 +3602,12 @@ input, a, button, select, div, textarea {
           text-transform: uppercase;
           cursor: pointer; }
           .header .header__flex-container .navbar .nav .nav__item .nav__link {
-            font-size: 18px !important; }
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px !important;
+            font-weight: 300;
+            line-height: 21;
+            text-align: center;
+            color: #3B2552; }
           .header .header__flex-container .navbar .nav .nav__item:hover {
             background-color: #f5fbff; }
     .header .header__flex-container .header__burger {
