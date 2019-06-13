@@ -3654,6 +3654,8 @@ input, a, button, select, div, textarea {
       justify-content: center;
       align-items: flex-start;
       border: 1px solid yellow; }
+      .section_one_style .section__item:first-child .section__inner-wrap-img .section__img_section_one {
+        position: static; }
     .section_one_style .section__item:first-child .section__form-email_section_one {
       width: 100%;
       display: flex;
