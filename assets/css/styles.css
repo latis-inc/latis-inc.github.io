@@ -2962,7 +2962,7 @@ input, a, button, select, div, textarea {
     font-weight: 700;
     line-height: 30px;
     color: #3B2552;
-    letter-spacing: 0; }
+    letter-spacing: -0.5px; }
   .section__flex .section__call {
     margin-bottom: 27px;
     font-family: 'Roboto-Light', sans-serif;
