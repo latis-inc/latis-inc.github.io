@@ -58,6 +58,7 @@ input, a, button, select, div, textarea{
         margin-bottom: 22px;
         font-family: 'Rubik-Bold', sans-serif;
         @include fonts(25px, 700, 30px, #3B2552);
+        letter-spacing: 0;
     }
 
     .section__call{
@@ -324,7 +325,7 @@ input, a, button, select, div, textarea{
     .section__call{
         font-family: 'Roboto-Thin', sans-serif;
         text-align: center;
-        @include fonts(18px, 200, 18px, #3B2552);
+        @include fonts(18px, 200, 23px, #3B2552);
     }
 
     .section__sign-up{
@@ -332,6 +333,9 @@ input, a, button, select, div, textarea{
     }
 
     .section__input-sign-up{
+         -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
         width: 328px;
         height: 35px;
         padding: 0px 10px 0 10px;
