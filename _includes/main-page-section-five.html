@@ -1,13 +1,15 @@
+{% for section in site.data.main-page %}
 <section class="section section_five_style">
   <div class="section__flex">
     <div class="section__item">
-      <img src="assets/images/To_do_list_2.png" class="section__to_do" alt="to-do-list">
-      <h2 class="section__title">{{page.section_five_title}}</h2>
-      <p class="section__call">{{page.section_five_call}}</p>
+      <img src="/assets/images/To_do_list_2.png" class="section__to_do" alt="to-do-list">
+      <h2 class="section__title">{{section.section_five_title}}</h2>
+      <p class="section__call">{{section.section_five_call}}</p>
       <form class="section__sign-up" action="https://formspree.io/sales@latis.co" method="POST">
-        <input type="email" class="section__input-sign-up" placeholder="{{page.section_five_placeholder}}" name="email-section-five">
-        <button class="section__btn-sign-up">{{page.section_five_btn}}</button>
+        <input type="email" class="section__input-sign-up" placeholder="{{section.section_five_placeholder}}" name="email-section-five">
+        <button class="section__btn-sign-up">{{section.section_five_btn}}</button>
       </form>
     </div>
   </div>
 </section>
+{% endfor %}

@@ -7,28 +7,29 @@
 <div class="section__flex">
 
 	<div class="section__link-vertical">
-		<a href="#" class="section__social-link"><img src="assets/images/FB.png" alt="fb" class="section__social-img"></a>
-		<a href="#" class="section__social-link"><img src="assets/images/TWITTER.png" alt="tw" class="section__social-img"></a>
-		<a href="#" class="section__social-link"><img src="assets/images/LINKEDIN.png" alt="in" class="section__social-img"></a>	
+		<a href="#" class="section__social-link"><img src="/assets/images/FB.png" alt="fb" class="section__social-img"></a>
+		<a href="#" class="section__social-link"><img src="/assets/images/TWITTER.png" alt="tw" class="section__social-img"></a>
+		<a href="#" class="section__social-link"><img src="/assets/images/LINKEDIN.png" alt="in" class="section__social-img"></a>	
 	</div>
 
 	<div class="section__single-post">
 		<h1 class="section__post-name">Post</h1>
-		<span class="section__post-time"><img src="assets/images/clock.png" alt="">11.15</span>
-		<img src="assets/images/forest.jpg" alt="post" class="section__post-img">	
-		<p class="section__post-content">
-			{{ content }}
-		</p>
+		<span class="section__post-time"><img src="/assets/images/clock.png" alt="clock">{{page.date | date: "%d %B %Y" }}</span>
+		<img src="{{page.link_image}}" alt="post" class="section__post-img">	
+		<div class="section__post-content">
+			{{content}}
+		</div>
 		<div class="section__link-horizontal">
 		<span class="section__share">Share this article</span>
-		<a href="#" class="section__social-link"><img src="assets/images/FB.png" alt="fb" class="section__social-img"></a>
-		<a href="#" class="section__social-link"><img src="assets/images/TWITTER.png" alt="tw" class="section__social-img"></a>
-		<a href="#" class="section__social-link"><img src="assets/images/LINKEDIN.png" alt="in" class="section__social-img"></a>		
+		<a href="#" class="section__social-link"><img src="/assets/images/FB.png" alt="fb" class="section__social-img"></a>
+		<a href="#" class="section__social-link"><img src="/assets/images/TWITTER.png" alt="tw" class="section__social-img"></a>
+		<a href="#" class="section__social-link"><img src="/assets/images/LINKEDIN.png" alt="in" class="section__social-img"></a>		
 		</div>
 	</div>	
 </div>		
 
 </section>
+{% include main-page-section-five.html %}
 </main>
 
 {% include footer.html %}
