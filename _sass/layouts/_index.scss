@@ -394,13 +394,11 @@ input, a, button, select, div, textarea{
         .popup__image{
             margin: 0 0 19px 0;
             padding:0;
-            border: 1px solid black;
         }
 
         .popup__title{
             margin: 0 0 4px 0;
             padding:0;
-            border: 1px solid black;
             font-family: 'Rubik-Bold', sans-serif;
             @include fonts(18px, 700, 21px, #3B2552);
             text-align: center;
@@ -409,7 +407,6 @@ input, a, button, select, div, textarea{
         .popup__info{
             margin: 0 0 10px 0;
             padding:0;
-            border: 1px solid black;
             font-family: 'Roboto-Light', sans-serif;
             @include fonts(14px, 300, 24px, #000000);
             text-align: center;
