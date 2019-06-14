@@ -321,7 +321,7 @@ input, a, button, select, div, textarea{
     .section__call{
         font-family: 'Roboto-Thin', sans-serif;
         text-align: center;
-        @include fonts(18px, 100, 18px, #3B2552);
+        @include fonts(18px, 200, 18px, #3B2552);
     }
 
     .section__sign-up{
