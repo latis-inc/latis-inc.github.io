@@ -3830,7 +3830,7 @@ input, a, button, select, div, textarea {
         justify-content: flex-start;
         align-items: center; }
         .section_five_style .section__item .section__sign-up .section__input-sign-up {
-          padding: 0;
+          padding: 0 0 0 10px;
           margin: 0 0 16px 0;
           width: 100%; }
         .section_five_style .section__item .section__sign-up .section__btn-sign-up {
