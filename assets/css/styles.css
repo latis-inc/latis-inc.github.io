@@ -3331,8 +3331,8 @@ input, a, button, select, div, textarea {
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
+    flex: 0 0 25%;
+    max-width: 25%;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
