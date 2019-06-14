@@ -310,24 +310,20 @@
 			margin: 0;
 			@include make-col(11);
 			@include flexbox(column, flex-start, center);
-			border: 1px solid black;
 
 			.section__to_do{
 				padding: 0;
 				margin: 0 0 21px 0;
-				border: 1px solid black;
 			}
 
 			.section__title{
 				padding: 0;
 				margin: 0 0 4px 0;
-				border: 1px solid black;
 			}
 
 			.section__call{
 				padding: 0;
 				margin: 0 0 15px 0;
-				border: 1px solid black;
 			}
 
 			.section__sign-up{
@@ -337,14 +333,12 @@
 				.section__input-sign-up{
 					padding: 0;
 					margin: 0 0 16px 0;
-					border: 1px solid black;
 					width: 100%;
 				}
 
 				.section__btn-sign-up{
 					padding: 0;
 					margin: 0;
-					border: 1px solid black;
 					margin: 0;
 					width: 100%;
 				}
