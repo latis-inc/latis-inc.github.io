@@ -3445,7 +3445,10 @@ input, a, button, select, div, textarea {
         margin-bottom: 15px;
         object-fit: cover; }
       .section_page_blog .section__flex .section__post-blog .section__post-time {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
         margin-bottom: 12px;
         font-family: 'Roboto-Thin', sans-serif;
         font-size: 13px;
