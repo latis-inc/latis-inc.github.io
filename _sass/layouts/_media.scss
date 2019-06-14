@@ -79,10 +79,12 @@
 			@include make-col(11);
 			@include flexbox(column, flex-start, center);
 
+
             .section__title{
             	text-align: center;
             	padding: 0;
             	margin: 0 0 12px 0;
+            	letter-spacing: -0.5px;
             }
 
             .section__call{
@@ -152,6 +154,7 @@
             .section__title{
             	padding: 0;
 				margin: 0 0 16px 0;
+				letter-spacing: -0.5px;
             }
 			
 			.section__info{
@@ -221,6 +224,7 @@
 			.section__title{
 				padding: 0;
 				margin: 0 0 16px 0;
+				letter-spacing: -0.5px;
 			}
 
 			.section__info{
@@ -278,6 +282,7 @@
         		padding: 0;
             	margin: 0 0 20px 0;
         		text-align: center;
+        		letter-spacing: -0.5px;
         	}
 
         	.section__info{
@@ -323,6 +328,7 @@
 			.section__title{
 				padding: 0;
 				margin: 0 0 15px 0;
+				letter-spacing: -0.5px;
 			}
 
 			.section__call{
