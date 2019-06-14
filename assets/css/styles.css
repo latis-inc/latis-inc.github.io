@@ -3797,16 +3797,29 @@ input, a, button, select, div, textarea {
         z-index: 99; }
 
   .section_five_style {
-    padding: 0;
-    padding: 52px 0 52px 0; }
+    padding: 45px 0 50px 0; }
     .section_five_style .section__item {
+      padding: 0;
+      margin: 0;
       flex: 0 0 91.6666666667%;
       max-width: 91.6666666667%;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      padding: 0; }
+      border: 1px solid black; }
+      .section_five_style .section__item .section__to_do {
+        padding: 0;
+        margin: 0 0 21px 0;
+        border: 1px solid black; }
+      .section_five_style .section__item .section__title {
+        padding: 0;
+        margin: 0 0 4px 0;
+        border: 1px solid black; }
+      .section_five_style .section__item .section__call {
+        padding: 0;
+        margin: 0 0 15px 0;
+        border: 1px solid black; }
       .section_five_style .section__item .section__sign-up {
         width: 100%;
         display: flex;
@@ -3814,9 +3827,14 @@ input, a, button, select, div, textarea {
         justify-content: flex-start;
         align-items: center; }
         .section_five_style .section__item .section__sign-up .section__input-sign-up {
-          width: 100%;
-          margin-bottom: 5px; }
+          padding: 0;
+          margin: 0 0 16px 0;
+          border: 1px solid black;
+          width: 100%; }
         .section_five_style .section__item .section__sign-up .section__btn-sign-up {
+          padding: 0;
+          margin: 0;
+          border: 1px solid black;
           margin: 0;
           width: 100%; }
 
