@@ -2961,7 +2961,8 @@ input, a, button, select, div, textarea {
     font-size: 25px;
     font-weight: 700;
     line-height: 30px;
-    color: #3B2552; }
+    color: #3B2552;
+    letter-spacing: 0; }
   .section__flex .section__call {
     margin-bottom: 27px;
     font-family: 'Roboto-Light', sans-serif;
@@ -3242,7 +3243,7 @@ input, a, button, select, div, textarea {
     text-align: center;
     font-size: 18px;
     font-weight: 200;
-    line-height: 18px;
+    line-height: 23px;
     color: #3B2552; }
   .section_five_style .section__sign-up {
     display: flex;
@@ -3250,6 +3251,9 @@ input, a, button, select, div, textarea {
     justify-content: center;
     align-items: flex-start; }
   .section_five_style .section__input-sign-up {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     width: 328px;
     height: 35px;
     padding: 0px 10px 0 10px;
@@ -3827,10 +3831,10 @@ input, a, button, select, div, textarea {
         margin: 0 0 21px 0; }
       .section_five_style .section__item .section__title {
         padding: 0;
-        margin: 0 0 4px 0; }
+        margin: 0 0 15px 0; }
       .section_five_style .section__item .section__call {
         padding: 0;
-        margin: 0 0 15px 0; }
+        margin: 0 0 26px 0; }
       .section_five_style .section__item .section__sign-up {
         width: 100%;
         display: flex;
