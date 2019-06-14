@@ -335,7 +335,7 @@
 				@include flexbox(column, flex-start, center);
 
 				.section__input-sign-up{
-					padding: 0;
+					padding: 0 0 0 10px;
 					margin: 0 0 16px 0;
 					width: 100%;
 				}
