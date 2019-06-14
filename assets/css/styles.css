@@ -3596,13 +3596,17 @@ input, a, button, select, div, textarea {
         z-index: 999; }
         .header .header__flex-container .navbar .nav .nav__item {
           width: 100%;
-          padding: 20px 0px !important;
+          /*padding: 20px 0px !important;*/
           margin-left: 0 !important;
           text-align: center;
           text-transform: uppercase;
           cursor: pointer;
           border-top: 1px solid #C2CFE0; }
           .header .header__flex-container .navbar .nav .nav__item .nav__link {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 20px 0px !important;
             font-family: 'Roboto', sans-serif !important;
             font-size: 18px !important;
             font-weight: 300 !important;
