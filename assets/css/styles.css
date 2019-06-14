@@ -3020,7 +3020,9 @@ input, a, button, select, div, textarea {
     .section_one_style .section__item .section__inner-wrap-img {
       display: none; }
   .section_one_style .section__input_section_one {
-    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     width: 240px;
     height: 35px;
     padding: 0px 10px 0 10px;
