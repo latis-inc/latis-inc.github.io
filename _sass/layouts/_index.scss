@@ -58,7 +58,7 @@ input, a, button, select, div, textarea{
         margin-bottom: 22px;
         font-family: 'Rubik-Bold', sans-serif;
         @include fonts(25px, 700, 30px, #3B2552);
-        letter-spacing: 0;
+        letter-spacing: -0.5px;
     }
 
     .section__call{
