@@ -2961,8 +2961,7 @@ input, a, button, select, div, textarea {
     font-size: 25px;
     font-weight: 700;
     line-height: 30px;
-    color: #3B2552;
-    letter-spacing: -0.5px; }
+    color: #3B2552; }
   .section__flex .section__call {
     margin-bottom: 27px;
     font-family: 'Roboto-Light', sans-serif;
@@ -3651,7 +3650,8 @@ input, a, button, select, div, textarea {
       .section_one_style .section__item:first-child .section__title {
         text-align: center;
         padding: 0;
-        margin: 0 0 12px 0; }
+        margin: 0 0 12px 0;
+        letter-spacing: -0.5px; }
       .section_one_style .section__item:first-child .section__call {
         margin: 0 0 31px 0;
         padding: 0;
@@ -3702,7 +3702,8 @@ input, a, button, select, div, textarea {
         margin: 0 0 17px 0; }
       .section_two_style .section__item:first-child .section__title {
         padding: 0;
-        margin: 0 0 16px 0; }
+        margin: 0 0 16px 0;
+        letter-spacing: -0.5px; }
       .section_two_style .section__item:first-child .section__info {
         padding: 0;
         margin: 0 0 25px 0;
@@ -3750,7 +3751,8 @@ input, a, button, select, div, textarea {
         margin: 0 0 10px 0; }
       .section_three_style .section__item:last-child .section__title {
         padding: 0;
-        margin: 0 0 16px 0; }
+        margin: 0 0 16px 0;
+        letter-spacing: -0.5px; }
       .section_three_style .section__item:last-child .section__info {
         padding: 0;
         margin: 0 0 38px 0;
@@ -3798,7 +3800,8 @@ input, a, button, select, div, textarea {
       .section_four_style .section__item:first-child .section__title {
         padding: 0;
         margin: 0 0 20px 0;
-        text-align: center; }
+        text-align: center;
+        letter-spacing: -0.5px; }
       .section_four_style .section__item:first-child .section__info {
         padding: 0;
         margin: 0 0 31px 0;
@@ -3831,7 +3834,8 @@ input, a, button, select, div, textarea {
         margin: 0 0 21px 0; }
       .section_five_style .section__item .section__title {
         padding: 0;
-        margin: 0 0 15px 0; }
+        margin: 0 0 15px 0;
+        letter-spacing: -0.5px; }
       .section_five_style .section__item .section__call {
         padding: 0;
         margin: 0 0 26px 0; }
