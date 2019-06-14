@@ -3,6 +3,9 @@ layout: blog
 
 title: 'Latis|Blog'
 
+pagination:
+enabled: true
+
 main_style: /assets/css
 main_script: /assets/js
 
@@ -22,7 +25,7 @@ section_five_btn: Sign Up
 			{% for post in site.posts %}
 			<a href ="{{ post.url }}"class="section__post-blog">
 				<img src="{{post.link_image}}" alt="forest" class="section__post-img">
-				<span class="section__post-time">{{post.date | date: "%d %B %Y" }}</span>
+				<span class="section__post-time"><img src="/assets/images/clock.png" alt="clock">{{post.date | date: "%d %B %Y" }}</span>
 				<h2 class="section__post-name">{{ post.title }}</h2>				
 				<p class="section__post-excerpt">{{ post.excerpt }}</p>
 			</a>
@@ -31,6 +34,33 @@ section_five_btn: Sign Up
 		</div>
 
 		<div class="pagination">
+			 {% if paginator.total_pages > 1 %}
+	<div class="pagination">
+	  {% if paginator.previous_page == 1 %}
+		<a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&laquo;</a>
+	  {% elsif paginator.previous_page%}
+		<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&laquo;</a>
+	  {% else %}
+		<span class="page-item">&laquo;</span>
+	  {% endif %}
+	
+	  {% for page in (1..paginator.total_pages) %}
+		{% if page == paginator.page %}
+		  <span class="page-item">{{ page }}</span>
+		{% elsif page == 1 %}
+		  <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">{{ page }}</a>
+		{% else %}
+		  <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="page-item">{{ page }}</a>
+		{% endif %}
+	  {% endfor %}
+	
+	  {% if paginator.next_page %}
+		<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&raquo;</a>
+	  {% else %}
+		<span class="page-item">&raquo;</span>
+	  {% endif %}
+	</div>
+	{% endif %}
 			
 		</div>
 

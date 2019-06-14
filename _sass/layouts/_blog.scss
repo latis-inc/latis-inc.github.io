@@ -60,7 +60,7 @@
 	    	}
 
 	    	.section__post-time{
-	    		display: block;
+	    		@include flexbox( row, flex-start, center);
 	    		margin-bottom: 12px;
 	    		font-family: 'Roboto-Thin', sans-serif;
 	    		@include fonts(13px, 100, 25px, #000000);
