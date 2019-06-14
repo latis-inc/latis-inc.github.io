@@ -346,10 +346,18 @@ $('.nav__link_request_access').on('click', function(e){
 
   const scriptURL = 'https://script.google.com/macros/s/AKfycby3LHSmO14heLdbkEL2QGSHrTLGXfq2-aFx5ksZlWcZ3TLM6TRP/exec'
   const form = document.forms['submit-to-google-sheet']
-  const form = document.forms['submit-to-google-sheett']
+  const formt = document.forms['submit-to-google-sheett']
 
   form.addEventListener('submit', e => {
   	console.log('1');
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+
+  formt.addEventListener('submit', e => {
+    console.log('2');
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => console.log('Success!', response))
