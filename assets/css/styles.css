@@ -3341,12 +3341,10 @@ input, a, button, select, div, textarea {
     padding: 28px 45px 32px 45px; }
     .popup .popup__window-popup .popup__image {
       margin: 0 0 19px 0;
-      padding: 0;
-      border: 1px solid black; }
+      padding: 0; }
     .popup .popup__window-popup .popup__title {
       margin: 0 0 4px 0;
       padding: 0;
-      border: 1px solid black;
       font-family: 'Rubik-Bold', sans-serif;
       font-size: 18px;
       font-weight: 700;
@@ -3356,7 +3354,6 @@ input, a, button, select, div, textarea {
     .popup .popup__window-popup .popup__info {
       margin: 0 0 10px 0;
       padding: 0;
-      border: 1px solid black;
       font-family: 'Roboto-Light', sans-serif;
       font-size: 14px;
       font-weight: 300;
