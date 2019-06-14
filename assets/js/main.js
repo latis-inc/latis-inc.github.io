@@ -10,6 +10,7 @@ $('.section__btn_contact_us').on('click', function(e){
   const form = document.forms['submit-to-google-sheet']
 
   form.addEventListener('submit', e => {
+  	console.log('1');
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => console.log('Success!', response))
