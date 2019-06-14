@@ -389,18 +389,16 @@ input, a, button, select, div, textarea{
         @include make-col(3);
         background-color: #ffffff;
         @include flexbox(column, center, center);
-        /*padding: 38px 33px 32px 33px;*/
-        padding: 0 0 0 0 ;
+        padding: 28px 45px 32px 45px;
         
         .popup__image{
-            /*margin-bottom: 23px;*/
-            margin: 0;
+            margin: 0 0 19px 0;
             padding:0;
             border: 1px solid black;
         }
 
         .popup__title{
-            margin: 0;
+            margin: 0 0 4px 0;
             padding:0;
             border: 1px solid black;
             font-family: 'Rubik-Bold', sans-serif;
@@ -409,7 +407,7 @@ input, a, button, select, div, textarea{
         }
 
         .popup__info{
-            margin: 0;
+            margin: 0 0 10px 0;
             padding:0;
             border: 1px solid black;
             font-family: 'Roboto-Light', sans-serif;
