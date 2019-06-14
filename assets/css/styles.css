@@ -3806,20 +3806,16 @@ input, a, button, select, div, textarea {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: center;
-      border: 1px solid black; }
+      align-items: center; }
       .section_five_style .section__item .section__to_do {
         padding: 0;
-        margin: 0 0 21px 0;
-        border: 1px solid black; }
+        margin: 0 0 21px 0; }
       .section_five_style .section__item .section__title {
         padding: 0;
-        margin: 0 0 4px 0;
-        border: 1px solid black; }
+        margin: 0 0 4px 0; }
       .section_five_style .section__item .section__call {
         padding: 0;
-        margin: 0 0 15px 0;
-        border: 1px solid black; }
+        margin: 0 0 15px 0; }
       .section_five_style .section__item .section__sign-up {
         width: 100%;
         display: flex;
@@ -3829,12 +3825,10 @@ input, a, button, select, div, textarea {
         .section_five_style .section__item .section__sign-up .section__input-sign-up {
           padding: 0;
           margin: 0 0 16px 0;
-          border: 1px solid black;
           width: 100%; }
         .section_five_style .section__item .section__sign-up .section__btn-sign-up {
           padding: 0;
           margin: 0;
-          border: 1px solid black;
           margin: 0;
           width: 100%; }
 
