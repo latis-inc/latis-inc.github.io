@@ -3345,7 +3345,7 @@ input, a, button, select, div, textarea {
       font-family: 'Rubik-Bold', sans-serif;
       font-size: 18px;
       font-weight: 700;
-      line-height: auto;
+      line-height: 21px;
       color: #3B2552;
       text-align: center;
       margin-bottom: 5px; }
