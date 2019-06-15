@@ -347,7 +347,7 @@ $('.nav__link_request_access').on('click', function(e){
 
 
 var c = 0;
-/*отправка формы*/
+//отправка формы
 function popup(){
   $('.back-popup').fadeIn( 'slow' );
   $('.popup').fadeIn( 'slow' );
