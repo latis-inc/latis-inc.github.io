@@ -361,7 +361,7 @@ function sendMail(){
     console.log('1');
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response), popup())
+      .then(response => console.log('Success!', response), popup(), break)
       .catch(error => console.error('Error!', error.message))
   })
 }
