@@ -372,7 +372,7 @@ if(document.getElementsByClassName('section__btn_section_one')[0]){
     document.getElementsByClassName('section__form-email_section_one')[0].setAttribute('name', 'submit-to-google-sheet');
     sendMail();
     document.getElementsByClassName('section__form-email_section_one')[0].removeAttribute('name');
-    break;
+    return false;
 
   }
 
