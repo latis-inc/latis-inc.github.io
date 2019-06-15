@@ -344,27 +344,39 @@ $('.nav__link_request_access').on('click', function(e){
   e.preventDefault();
 });
 
+document.getElementsByClassName('section__btn_section_one')[0].onclick=function(){
+  document.getElementsByClassName('section__form-email_section_one')[0].setAttribute('name', 'submit-to-google-sheet');
+  const form = document.forms['submit-to-google-sheet'];
+  form.addEventListener('submit', e => {
+    console.log('1');
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+}
+
   const scriptURL = 'https://script.google.com/macros/s/AKfycby3LHSmO14heLdbkEL2QGSHrTLGXfq2-aFx5ksZlWcZ3TLM6TRP/exec'
   //const scripttURL = 'https://script.google.com/macros/s/AKfycby3LHSmO14heLdbkEL2QGSHrTLGXfq2-aFx5ksZlWcZ3TLM6TRP/exec'
 
-  const form = document.forms['submit-to-google-sheet']
-  const formt = document.forms['submit-to-google-sheett']
+  //const form = document.forms['submit-to-google-sheet']
+  //const formt = document.forms['submit-to-google-sheett']
 
-  form.addEventListener('submit', e => {
+  /*form.addEventListener('submit', e => {
   	console.log('1');
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
-  })
+  })*/
 
-  formt.addEventListener('submit', e => {
+  /*formt.addEventListener('submit', e => {
     console.log('2');
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
-  })
+  })*/
 
 
 });
