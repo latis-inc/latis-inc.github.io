@@ -354,6 +354,21 @@ document.getElementsByClassName('section__btn_section_one')[0].onclick=function(
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
   })
+  document.getElementsByClassName('section__form-email_section_one')[0].removeAttribute('name');
+}
+
+
+document.getElementsByClassName('section__btn-sign-up')[0].onclick=function(){
+  document.getElementsByClassName('section__sign-up')[0].setAttribute('name', 'submit-to-google-sheet');
+  const form = document.forms['submit-to-google-sheet'];
+  form.addEventListener('submit', e => {
+    console.log('2');
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+  document.getElementsByClassName('section__form-email_section_one')[0].removeAttribute('name');
 }
 
   const scriptURL = 'https://script.google.com/macros/s/AKfycby3LHSmO14heLdbkEL2QGSHrTLGXfq2-aFx5ksZlWcZ3TLM6TRP/exec'
