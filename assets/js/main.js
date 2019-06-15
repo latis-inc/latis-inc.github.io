@@ -347,14 +347,14 @@ $('.nav__link_request_access').on('click', function(e){
 
 
 var c = 0;
-//отправка формыs
+//отправка формы
 function popup(){
   $('.back-popup').fadeIn( 'slow' );
   $('.popup').fadeIn( 'slow' );
   $('.popup').css('display', 'flex');
 }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycby3LHSmO14heLdbkEL2QGSHrTLGXfq2-aFx5ksZlWcZ3TLM6TRP/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzHHDQ1QTfmhqa-RyIhn8mtjIrixyIcywVCQKQYWSCbn3OMO9Y/exec'
 
 function sendMail(classForm){
     document.getElementsByClassName(classForm)[0].setAttribute('name', 'submit-to-google-sheet');
