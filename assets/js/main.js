@@ -361,9 +361,10 @@ function sendMail(){
     console.log('1');
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response), popup(), return false)
+      .then(response => console.log('Success!', response), popup())
       .catch(error => console.error('Error!', error.message))
   })
+  return false;
 }
 
 
@@ -372,7 +373,6 @@ if(document.getElementsByClassName('section__btn_section_one')[0]){
     document.getElementsByClassName('section__form-email_section_one')[0].setAttribute('name', 'submit-to-google-sheet');
     sendMail();
     document.getElementsByClassName('section__form-email_section_one')[0].removeAttribute('name');
-    return false;
 
   }
 
