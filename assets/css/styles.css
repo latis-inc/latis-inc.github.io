@@ -3349,8 +3349,8 @@ input, a, button, select, div, textarea {
     .popup .popup__window-popup .popup__image {
       margin: 0 0 19px 0;
       padding: 0;
-      max-width: 100%;
-      height: auto; }
+      width: 100% !important;
+      height: auto !important; }
     .popup .popup__window-popup .popup__title {
       margin: 0 0 4px 0;
       padding: 0;
