@@ -346,7 +346,8 @@ $('.nav__link_request_access').on('click', function(e){
 });
 
 
-/*отправка формы*/
+var c = 0;
+//отправка формыs
 function popup(){
   $('.back-popup').fadeIn( 'slow' );
   $('.popup').fadeIn( 'slow' );
@@ -355,28 +356,34 @@ function popup(){
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycby3LHSmO14heLdbkEL2QGSHrTLGXfq2-aFx5ksZlWcZ3TLM6TRP/exec'
 
-function sendMail(){
-  const form = document.forms['submit-to-google-sheet'];
-  form.addEventListener('submit', e => {
-    console.log('1');
-    e.preventDefault()
+function sendMail(classForm){
+    document.getElementsByClassName(classForm)[0].setAttribute('name', 'submit-to-google-sheet');
+    const form = document.forms['submit-to-google-sheet'];
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => console.log('Success!', response), popup())
       .catch(error => console.error('Error!', error.message))
-  })
-  return false;
+    document.getElementsByClassName('section__form-email_section_one')[0].removeAttribute('name');
 }
 
 
 if(document.getElementsByClassName('section__btn_section_one')[0]){
-  document.getElementsByClassName('section__btn_section_one')[0].onclick=function(){
-    document.getElementsByClassName('section__form-email_section_one')[0].setAttribute('name', 'submit-to-google-sheet');
-    sendMail();
-    document.getElementsByClassName('section__form-email_section_one')[0].removeAttribute('name');
-
+    document.getElementsByClassName('section__btn_section_one')[0].onclick = function(e){
+      e.preventDefault();
+      var classForm = 'section__form-email_section_one';
+      sendMail(classForm);
+    }
   }
 
+if(document.getElementsByClassName('section__btn-sign-up')[0]){
+  document.getElementsByClassName('section__btn-sign-up')[0].onclick = function(e){
+    e.preventDefault();
+    var classForm= 'section__sign-up';
+    sendMail(classForm);
+  }
 }
+
+
+
 
 /*document.getElementsByClassName('section__btn_section_one')[0].onclick=function(){
   document.getElementsByClassName('section__form-email_section_one')[0].setAttribute('name', 'submit-to-google-sheet');
