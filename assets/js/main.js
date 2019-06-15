@@ -324,15 +324,16 @@ Y&&(Z.prototype[Y]="FormData");if(V){var aa=T.XMLHttpRequest.prototype.setReques
 
 
 
-$(document).ready(function(){function e(){t++;var e=document.querySelector("nav"),n=getComputedStyle(e.querySelector("li"));if(t%2!=0){var o=parseInt(n.height),l=e.getElementsByTagName("li").length,u=o*l;e.querySelector("ul").style.height=u+"px"}t%2==0&&(e.querySelector("ul").style.height="0px")}var t=0;document.getElementsByClassName("header__btn-mobile-menu")[0]&&(document.getElementsByClassName("header__btn-mobile-menu")[0].onclick=e),$(".section__btn_section_one").on("click",function(){$(".back-popup").fadeIn("slow"),$(".popup").fadeIn("slow"),$(".popup").css("display","flex")}),$(".popup__btn")&&$(".popup__btn").on("click",function(){$(".back-popup").fadeOut("slow"),$(".popup").fadeOut("slow")});var n={el:{ham:$(".header__btn-mobile-menu"),menuTop:$(".header_menu-top"),menuMiddle:$(".header_menu-middle"),menuBottom:$(".header_menu-bottom")},init:function(){n.bindUIactions()},bindUIactions:function(){n.el.ham.on("click",function(e){n.activateMenu(e),e.preventDefault()})},activateMenu:function(){n.el.menuTop.toggleClass("menu-top-click"),n.el.menuMiddle.toggleClass("menu-middle-click"),n.el.menuBottom.toggleClass("menu-bottom-click")}};n.init()
+$(document).ready(function(){function e(){t++;var e=document.querySelector("nav"),n=getComputedStyle(e.querySelector("li"));if(t%2!=0){var o=parseInt(n.height),l=e.getElementsByTagName("li").length,u=o*l;e.querySelector("ul").style.height=u+"px"}t%2==0&&(e.querySelector("ul").style.height="0px")}var t=0;document.getElementsByClassName("header__btn-mobile-menu")[0]&&(document.getElementsByClassName("header__btn-mobile-menu")[0].onclick=e),$(".popup__btn")&&$(".popup__btn").on("click",function(){$(".back-popup").fadeOut("slow"),$(".popup").fadeOut("slow")});var n={el:{ham:$(".header__btn-mobile-menu"),menuTop:$(".header_menu-top"),menuMiddle:$(".header_menu-middle"),menuBottom:$(".header_menu-bottom")},init:function(){n.bindUIactions()},bindUIactions:function(){n.el.ham.on("click",function(e){n.activateMenu(e),e.preventDefault()})},activateMenu:function(){n.el.menuTop.toggleClass("menu-top-click"),n.el.menuMiddle.toggleClass("menu-middle-click"),n.el.menuBottom.toggleClass("menu-bottom-click")}};n.init()
 
 
-$('.section__btn-sign-up').on('click', function(){
+/*$('.section__btn-sign-up').on('click', function(){
   $('.back-popup').fadeIn( 'slow' );
   $('.popup').fadeIn( 'slow' );
   $('.popup').css('display', 'flex');
-})
+})*/
 
+/*сколлы вниз*/
 
 $('.section__btn_contact_us').on('click', function(e){
   $('html,body').stop().animate({ scrollTop: $('.section__to_do').offset().top }, 500);
@@ -344,7 +345,39 @@ $('.nav__link_request_access').on('click', function(e){
   e.preventDefault();
 });
 
-document.getElementsByClassName('section__btn_section_one')[0].onclick=function(){
+
+/*отправка формы*/
+function popup(){
+  $('.back-popup').fadeIn( 'slow' );
+  $('.popup').fadeIn( 'slow' );
+  $('.popup').css('display', 'flex');
+}
+
+function sendMail(){
+  const form = document.forms['submit-to-google-sheet'];
+  form.addEventListener('submit', e => {
+    console.log('1');
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response), popup())
+      .catch(error => console.error('Error!', error.message))
+  })
+}
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycby3LHSmO14heLdbkEL2QGSHrTLGXfq2-aFx5ksZlWcZ3TLM6TRP/exec'
+
+if(document.getElementsByClassName('section__btn_section_one')[0]){
+  document.getElementsByClassName('section__btn_section_one')[0].onclick=function(){
+    document.getElementsByClassName('section__form-email_section_one')[0].setAttribute('name', 'submit-to-google-sheet');
+    sendMail();
+    document.getElementsByClassName('section__form-email_section_one')[0].removeAttribute('name');
+
+
+  }
+
+}
+
+/*document.getElementsByClassName('section__btn_section_one')[0].onclick=function(){
   document.getElementsByClassName('section__form-email_section_one')[0].setAttribute('name', 'submit-to-google-sheet');
   const form = document.forms['submit-to-google-sheet'];
   form.addEventListener('submit', e => {
@@ -355,43 +388,23 @@ document.getElementsByClassName('section__btn_section_one')[0].onclick=function(
       .catch(error => console.error('Error!', error.message))
   })
   document.getElementsByClassName('section__form-email_section_one')[0].removeAttribute('name');
-}
+}*/
 
 
-document.getElementsByClassName('section__btn-sign-up')[0].onclick=function(){
+/*document.getElementsByClassName('section__btn-sign-up')[0].onclick=function(){
   document.getElementsByClassName('section__sign-up')[0].setAttribute('name', 'submit-to-google-sheet');
   const form = document.forms['submit-to-google-sheet'];
   form.addEventListener('submit', e => {
     console.log('2');
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
+      .then(response => console.log('Success!', response), popup())
       .catch(error => console.error('Error!', error.message))
   })
   document.getElementsByClassName('section__form-email_section_one')[0].removeAttribute('name');
-}
+}*/
 
-  const scriptURL = 'https://script.google.com/macros/s/AKfycby3LHSmO14heLdbkEL2QGSHrTLGXfq2-aFx5ksZlWcZ3TLM6TRP/exec'
-  //const scripttURL = 'https://script.google.com/macros/s/AKfycby3LHSmO14heLdbkEL2QGSHrTLGXfq2-aFx5ksZlWcZ3TLM6TRP/exec'
-
-  //const form = document.forms['submit-to-google-sheet']
-  //const formt = document.forms['submit-to-google-sheett']
-
-  /*form.addEventListener('submit', e => {
-  	console.log('1');
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })*/
-
-  /*formt.addEventListener('submit', e => {
-    console.log('2');
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })*/
+  //const scriptURL = 'https://script.google.com/macros/s/AKfycby3LHSmO14heLdbkEL2QGSHrTLGXfq2-aFx5ksZlWcZ3TLM6TRP/exec'
 
 
 });
