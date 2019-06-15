@@ -400,8 +400,8 @@ input, a, button, select, div, textarea{
         .popup__image{
             margin: 0 0 19px 0;
             padding:0;
-            max-width: 100%;
-            height: auto;
+            width: 100% !important;
+            height: auto !important;
         }
 
         .popup__title{
