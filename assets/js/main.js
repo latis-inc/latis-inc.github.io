@@ -353,6 +353,8 @@ function popup(){
   $('.popup').css('display', 'flex');
 }
 
+const scriptURL = 'https://script.google.com/macros/s/AKfycby3LHSmO14heLdbkEL2QGSHrTLGXfq2-aFx5ksZlWcZ3TLM6TRP/exec'
+
 function sendMail(){
   const form = document.forms['submit-to-google-sheet'];
   form.addEventListener('submit', e => {
@@ -364,14 +366,12 @@ function sendMail(){
   })
 }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycby3LHSmO14heLdbkEL2QGSHrTLGXfq2-aFx5ksZlWcZ3TLM6TRP/exec'
 
 if(document.getElementsByClassName('section__btn_section_one')[0]){
   document.getElementsByClassName('section__btn_section_one')[0].onclick=function(){
     document.getElementsByClassName('section__form-email_section_one')[0].setAttribute('name', 'submit-to-google-sheet');
     sendMail();
     document.getElementsByClassName('section__form-email_section_one')[0].removeAttribute('name');
-
 
   }
 
