@@ -28,8 +28,18 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 theme: minima
-plugins:
-  - jekyll-feed
+plugins: [ 'jekyll-feed']
+
+plugins: [jekyll-paginate-v2]
+pagination:
+  enabled: true
+  per_page: 3
+  category: posts
+
+
+
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
