@@ -415,4 +415,13 @@ if(document.getElementsByClassName('section__btn-sign-up')[0]){
   //const scriptURL = 'https://script.google.com/macros/s/AKfycby3LHSmO14heLdbkEL2QGSHrTLGXfq2-aFx5ksZlWcZ3TLM6TRP/exec'
 
 
+if(window.location.pathname == '/blog/'){
+  var parentPageBlog = document.getElementsByClassName('section_page_blog')[0];
+  var flexPageBlog = parentPageBlog.getElementsByClassName('section__flex')[0];
+  var itemPageBlog = flexPageBlog.getElementsByClassName('section__item')[0];
+  if(itemPageBlog.children.length > 1  && itemPageBlog.children.length % 3 != 0){
+    itemPageBlog.innerHTML = itemPageBlog.innerHTML + '<div class="section__post-blog" style="padding: 0; margin: 0;"></div>';
+  }
+}
+
 });

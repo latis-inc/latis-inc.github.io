@@ -3,8 +3,6 @@ layout: blog
 
 title: 'Latis|Blog'
 
-pagination:
-enabled: true
 
 main_style: /assets/css
 main_script: /assets/js
@@ -22,15 +20,16 @@ section_five_btn: Sign Up
 			<h1 class="section__item">Blog</h1>
 		</div>
 		<div class="section__flex">
+			<div class="section__item">
 			{% for post in site.posts %}
 			<a href ="{{ post.url }}"class="section__post-blog">
 				<img src="{{post.link_image}}" alt="forest" class="section__post-img">
-				<span class="section__post-time"><img src="/assets/images/clock.png" alt="clock">{{post.date | date: "%d %B %Y" }}</span>
+				<span class="section__post-time"><img src="/assets/images/clock.png" alt="clock" class="section__img-clock">{{post.date | date: "%d %B %Y" }}</span>
 				<h2 class="section__post-name">{{ post.title }}</h2>				
 				<p class="section__post-excerpt">{{ post.excerpt }}</p>
 			</a>
 			{% endfor %}
-
+		</div>
 		</div>
 
 		<div class="pagination">
