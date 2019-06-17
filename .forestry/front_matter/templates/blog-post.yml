@@ -42,5 +42,5 @@ fields:
   name: excerpt
   label: excerpt
 pages:
-- _posts/title.md
+- _posts/2019-06-17-title.md
 - _posts/2019-06-17-good.md
