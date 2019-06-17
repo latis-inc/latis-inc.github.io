@@ -1,7 +1,7 @@
 ---
 
 layout: single
-title: 123
+title: forest
 robots_content: index, follow
 
 link_image: /assets/images/forest.jpg

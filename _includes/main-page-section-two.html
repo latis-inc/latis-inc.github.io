@@ -1,14 +1,15 @@
+{% for section in site.data.main-page-two %}
 <section class="section section_two_style">
   <div class="section__flex">
     <div class="section__item">
       <img src="assets/images/polygon-blue.png" alt="polygin" class="section__polygon">
-      <h2 class="section__title">{{page.section_two_title}}</h2>
-      <p class="section__info">{{page.section_two_info}}</p>
+      <h2 class="section__title">{{section.section_two_title}}</h2>
+      <p class="section__info">{{section.section_two_info}}</p>
       <div class="section__inner-wrap-img">
         <img src="assets/images/latis-knowledge-base.png" alt="components" class="section__components-mobile"> 
       </div>
-      <p class="section__answer">{{page.section_two_answer}}</p>
-      <button type="button" class="section__btn section__btn_contact_us">{{page.section_two_btn}}</button>
+      <p class="section__answer">{{section.section_two_answer}}</p>
+      <button type="button" class="section__btn section__btn_contact_us">{{section.section_two_btn}}</button>
     </div>
     <div class="section__item">
       <img src="assets/images/latis-knowledge-base.png" alt="components" class="section__components">
@@ -16,3 +17,4 @@
     </div>
   </div>
 </section>
+{% endfor %}

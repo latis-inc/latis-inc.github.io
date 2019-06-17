@@ -6,15 +6,6 @@ pagination:
 
 title: 'Latis|Blog'
 
-
-main_style: /assets/css
-main_script: /assets/js
-
-section_five_title: Newsletter Signup
-section_five_call: Follow our journey as we share constant progress about Latis with you!
-section_five_placeholder: Your Email Address
-section_five_btn: Sign Up
-
 ---
 
 
@@ -36,34 +27,19 @@ section_five_btn: Sign Up
 		</div>
 
 		<div class="pagination">
-			  {% if paginator.total_pages > 1 %}
-	<div class="pagination">
-	  {% if paginator.previous_page == 1 %}
-		<a href="{{ '/blog/' | prepend: site.baseurl | replace: '/', '/' }}" class="page-item">&laquo;</a>
-	  {% elsif paginator.previous_page%}
-		<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '/', '/' }}" class="page-item">&laquo;</a>
-	  {% else %}
-		<span class="page-item">&laquo;</span>
-	  {% endif %}
-	
-	  {% for page in (1..paginator.total_pages) %}
-		{% if page == paginator.page %}
-		  <span class="page-item">{{ page }}</span>
-		{% elsif page == 1 %}
-		  <a href="{{ '/blog/' | prepend: site.baseurl | replace: '/', '/' }}" class="page-item">{{ page }}</a>
-		{% else %}
-		  <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '/', '/blog/' | replace: ':num', page }}" class="page-item">{{ page }}</a>
-		{% endif %}
-	  {% endfor %}
-	
-	  {% if paginator.next_page %}
-		<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '/', '/' }}" class="page-item">&raquo;</a>
-	  {% else %}
-		<span class="page-item">&raquo;</span>
-	  {% endif %}
-	</div>
-	{% endif %}
-			
+			{% if paginator.previous_page %}
+    			<a href="{{ paginator.previous_page_path }}" class="pagination__previous-link">Previous</a>
+  			{% else %}
+    			<span class="pagination__previous">Previous</span>
+  			{% endif %}
+  			<span class="pagination__page-number">
+    		{{ paginator.page }} of {{ paginator.total_pages }}
+  			</span>
+  			{% if paginator.next_page %}
+    			<a href="{{ paginator.next_page_path }}" class="pagination__previous-next">Next</a>
+  			{% else %}
+    			<span class="pagination__next">Next</span>
+  			{% endif %}	
 		</div>
 
 	</section>

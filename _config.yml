@@ -35,6 +35,7 @@ pagination:
   enabled: true
   per_page: 3
   category: posts
+  sort_reverse: true
 
 
 

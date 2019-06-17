@@ -346,7 +346,6 @@ $('.nav__link_request_access').on('click', function(e){
 });
 
 
-var c = 0;
 //отправка формы
 function popup(){
   $('.back-popup').fadeIn( 'slow' );
@@ -365,55 +364,31 @@ function sendMail(classForm){
     document.getElementsByClassName('section__form-email_section_one')[0].removeAttribute('name');
 }
 
-
 if(document.getElementsByClassName('section__btn_section_one')[0]){
     document.getElementsByClassName('section__btn_section_one')[0].onclick = function(e){
       e.preventDefault();
-      var classForm = 'section__form-email_section_one';
-      sendMail(classForm);
+      var inputSectionOne = document.getElementsByClassName('section__input_section_one')[0].value;
+      if(inputSectionOne.search(/@[a-zA-Z0-9]+\.[a-zA-Z]+$/i) != -1){
+        var classForm = 'section__form-email_section_one';
+        sendMail(classForm);
+      } 
     }
   }
 
 if(document.getElementsByClassName('section__btn-sign-up')[0]){
   document.getElementsByClassName('section__btn-sign-up')[0].onclick = function(e){
     e.preventDefault();
-    var classForm= 'section__sign-up';
-    sendMail(classForm);
+    var inputSectionOne = document.getElementsByClassName('section__input-sign-up')[0].value;
+      if(inputSectionOne.search(/@[a-zA-Z0-9]+\.[a-zA-Z]+$/i) != -1){
+      var classForm= 'section__sign-up';
+      sendMail(classForm);
+    }
   }
 }
 
-
-
-
-/*document.getElementsByClassName('section__btn_section_one')[0].onclick=function(){
-  document.getElementsByClassName('section__form-email_section_one')[0].setAttribute('name', 'submit-to-google-sheet');
-  const form = document.forms['submit-to-google-sheet'];
-  form.addEventListener('submit', e => {
-    console.log('1');
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
-  document.getElementsByClassName('section__form-email_section_one')[0].removeAttribute('name');
-}*/
-
-
-/*document.getElementsByClassName('section__btn-sign-up')[0].onclick=function(){
-  document.getElementsByClassName('section__sign-up')[0].setAttribute('name', 'submit-to-google-sheet');
-  const form = document.forms['submit-to-google-sheet'];
-  form.addEventListener('submit', e => {
-    console.log('2');
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response), popup())
-      .catch(error => console.error('Error!', error.message))
-  })
-  document.getElementsByClassName('section__form-email_section_one')[0].removeAttribute('name');
-}*/
-
   //const scriptURL = 'https://script.google.com/macros/s/AKfycby3LHSmO14heLdbkEL2QGSHrTLGXfq2-aFx5ksZlWcZ3TLM6TRP/exec'
 
+/*заполнение ряда на странице блог, чтобы элемены правильно позиционровались*/
 var str = window.location.pathname;
 if(str.search(/blog/i) != -1){
   var parentPageBlog = document.getElementsByClassName('section_page_blog')[0];
