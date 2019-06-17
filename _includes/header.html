@@ -5,6 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="description" content="">
+        {% if page.robots_content %}
+    <meta name="robots" content="{{page.robots_content}}">
+{% endif %}
+{% if page.keyword %}
+    <meta name="keywords" content="{{page.keyword}}"/>
+{% endif %}
+{% if page.description %}
+    <meta name="description" content="{{page.description}}">
+{% endif %}
+    
+    <link rel="canonical" href="{{site.url}}{{page.url}}">
+
+{% if page.og_title %}
+    <meta property="og:title" content="{{page.og_title}}">
+{% endif %}
+{% if page.og_description %}
+    <meta property="og:description" content="{{page.og_description}}">
+{% endif %}
+
+    <meta property="og:url" content="{{site.url}}{{page.url}}">
+    <meta property="og:site_name" content="Coalition Space">
+
+{% if page.og_type %}
+    <meta property="og:type" content="{{page.og_type}}">
+{% endif %}
+{% if page.og_image %}
+    <meta property="og:image" content="{{site.url}}/assets/images/{{page.og_image}}">
+{% endif %}
         <title>{{ page.title }}</title>
         <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
