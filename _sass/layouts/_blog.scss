@@ -193,7 +193,11 @@
 			@include flexbox(row, center, center);
 
 			svg{
-				margin-right: 10px; 
+				margin-right: 10px;
+
+				path{
+						fill: #3b2552;
+					} 
 			}
 
 
@@ -219,7 +223,9 @@
 
 			svg{
 				margin-left: 10px; 
-				fill: red;
+					path{
+						fill: #3b2552;
+					}
 			}
 		}
 
