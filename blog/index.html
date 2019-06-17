@@ -6,11 +6,6 @@ pagination:
 
 title: 'Latis|Blog'
 
-link_style: /assets/css/
-link_script: /assets/js/
-
-link_img: /assets/images/
-name_img_post: forest.jpg
 
 ---
 
@@ -23,7 +18,7 @@ name_img_post: forest.jpg
 			<div class="section__item">
 			{% for post in paginator.posts %}
 			<a href ="{{ post.url }}"class="section__post-blog">
-				<img src="{{page.link_img}}{{ page.name_img_post }}" alt="forest" class="section__post-img">
+				<img src="{{ post.image }}" alt="{{post.image_alt}}" class="section__post-img">
 				<span class="section__post-time"><img src="/assets/images/clock.png" alt="clock" class="section__img-clock">{{post.date | date: "%d %B %Y" }}</span>
 				<h2 class="section__post-name">{{ post.title }}</h2>				
 				<p class="section__post-excerpt">{{ post.excerpt }}</p>
