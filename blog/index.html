@@ -22,7 +22,7 @@ link_img: ../assets/images/
 			<div class="section__item">
 			{% for post in paginator.posts %}
 			<a href ="{{ post.url }}"class="section__post-blog">
-				<img src="{{post.link_image}}" alt="forest" class="section__post-img">
+				<img src="{{post.link_image_post}}" alt="forest" class="section__post-img">
 				<span class="section__post-time"><img src="../assets/images/clock.png" alt="clock" class="section__img-clock">{{post.date | date: "%d %B %Y" }}</span>
 				<h2 class="section__post-name">{{ post.title }}</h2>				
 				<p class="section__post-excerpt">{{ post.excerpt }}</p>
