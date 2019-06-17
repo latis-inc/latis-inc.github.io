@@ -391,12 +391,15 @@ if(document.getElementsByClassName('section__btn-sign-up')[0]){
 /*заполнение ряда на странице блог, чтобы элемены правильно позиционровались*/
 var str = window.location.pathname;
 if(str.search(/blog/i) != -1){
+  if(document.getElementsByClassName('section_page_blog')[0]){
   var parentPageBlog = document.getElementsByClassName('section_page_blog')[0];
   var flexPageBlog = parentPageBlog.getElementsByClassName('section__flex')[0];
   var itemPageBlog = flexPageBlog.getElementsByClassName('section__item')[0];
   if(itemPageBlog.children.length > 1  && itemPageBlog.children.length % 3 != 0){
     itemPageBlog.innerHTML = itemPageBlog.innerHTML + '<div class="section__post-blog" style="padding: 0; margin: 0;"></div>';
   }
+}
+  document.getElementsByClassName('nav__link_blog')[0].style.color = '#f80000';
 }
 
 });
