@@ -16,7 +16,7 @@
 	<div class="section__single-post">
 		<h1 class="section__post-name">{{page.title}}</h1>
 		<span class="section__post-time"><img src="/assets/images/clock.png" alt="clock" class="section__img-clock">{{page.date | date: "%d %B %Y" }}</span>
-		<img src="{{page.link_image}}" alt="post" class="section__post-img">	
+		<img src="{{page.link_img}}{{ page.name_img_post }}" alt="post" class="section__post-img">	
 		<div class="section__post-content">
 			{{content}}
 		</div>

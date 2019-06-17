@@ -33,7 +33,7 @@ plugins: [ 'jekyll-feed']
 plugins: [jekyll-paginate-v2]
 pagination:
   enabled: true
-  per_page: 3
+  per_page: 6
   category: posts
   sort_reverse: true
 

@@ -6,10 +6,11 @@ pagination:
 
 title: 'Latis|Blog'
 
-link_style: ../assets/css/
-link_script: ../assets/js/
+link_style: /assets/css/
+link_script: /assets/js/
 
-link_img: ../assets/images/
+link_img: /assets/images/
+name_img_post: forest.jpg
 
 ---
 
@@ -22,30 +23,43 @@ link_img: ../assets/images/
 			<div class="section__item">
 			{% for post in paginator.posts %}
 			<a href ="{{ post.url }}"class="section__post-blog">
-				<img src="{{post.link_image_post}}" alt="forest" class="section__post-img">
-				<span class="section__post-time"><img src="../assets/images/clock.png" alt="clock" class="section__img-clock">{{post.date | date: "%d %B %Y" }}</span>
+				<img src="{{page.link_img}}{{ page.name_img_post }}" alt="forest" class="section__post-img">
+				<span class="section__post-time"><img src="/assets/images/clock.png" alt="clock" class="section__img-clock">{{post.date | date: "%d %B %Y" }}</span>
 				<h2 class="section__post-name">{{ post.title }}</h2>				
 				<p class="section__post-excerpt">{{ post.excerpt }}</p>
+				<span class="section__read-more">Read more <svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.4243 5.53572C20.6586 5.3014 20.6586 4.9215 20.4243 4.68719L16.6059 0.868811C16.3716 0.634496 15.9917 0.634496 15.7574 0.868811C15.523 1.10313 15.523 1.48302 15.7574 1.71734L19.1515 5.11145L15.7574 8.50556C15.523 8.73988 15.523 9.11978 15.7574 9.35409C15.9917 9.58841 16.3716 9.58841 16.6059 9.35409L20.4243 5.53572ZM-5.2608e-08 5.71145L20 5.71145L20 4.51145L5.2608e-08 4.51145L-5.2608e-08 5.71145Z" fill="#3B2552"/>
+</svg></span>
 			</a>
 			{% endfor %}
 		</div>
 		</div>
 
 		<div class="pagination">
+			<div class="pagination__item">
 			{% if paginator.previous_page %}
-    			<a href="{{ paginator.previous_page_path }}" class="pagination__previous-link">Previous</a>
+    			<a href="{{ paginator.previous_page_path }}" class="pagination__previous-link"><svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.575736 4.57573C0.341421 4.81005 0.341421 5.18995 0.575736 5.42426L4.39411 9.24264C4.62843 9.47695 5.00833 9.47695 5.24264 9.24264C5.47696 9.00832 5.47696 8.62843 5.24264 8.39411L1.84853 5L5.24264 1.60589C5.47696 1.37157 5.47696 0.991672 5.24264 0.757358C5.00833 0.523043 4.62843 0.523043 4.39411 0.757358L0.575736 4.57573ZM21 4.4L1 4.4L1 5.6L21 5.6L21 4.4Z" fill="#3B2552"/>
+</svg>Previous Page</a>
   			{% else %}
-    			<span class="pagination__previous">Previous</span>
+    			<span class="pagination__previous"> <svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.575736 4.57573C0.341421 4.81005 0.341421 5.18995 0.575736 5.42426L4.39411 9.24264C4.62843 9.47695 5.00833 9.47695 5.24264 9.24264C5.47696 9.00832 5.47696 8.62843 5.24264 8.39411L1.84853 5L5.24264 1.60589C5.47696 1.37157 5.47696 0.991672 5.24264 0.757358C5.00833 0.523043 4.62843 0.523043 4.39411 0.757358L0.575736 4.57573ZM21 4.4L1 4.4L1 5.6L21 5.6L21 4.4Z" fill="#3B2552"/>
+</svg>Previous Page</span>
   			{% endif %}
   			<span class="pagination__page-number">
     		{{ paginator.page }} of {{ paginator.total_pages }}
   			</span>
   			{% if paginator.next_page %}
-    			<a href="{{ paginator.next_page_path }}" class="pagination__previous-next">Next</a>
+    			<a href="{{ paginator.next_page_path }}" class="pagination__previous-next">Next Page<svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.4243 5.53572C20.6586 5.3014 20.6586 4.9215 20.4243 4.68719L16.6059 0.868811C16.3716 0.634496 15.9917 0.634496 15.7574 0.868811C15.523 1.10313 15.523 1.48302 15.7574 1.71734L19.1515 5.11145L15.7574 8.50556C15.523 8.73988 15.523 9.11978 15.7574 9.35409C15.9917 9.58841 16.3716 9.58841 16.6059 9.35409L20.4243 5.53572ZM-5.2608e-08 5.71145L20 5.71145L20 4.51145L5.2608e-08 4.51145L-5.2608e-08 5.71145Z" fill="#3B2552"/>
+</svg></a>
   			{% else %}
-    			<span class="pagination__next">Next</span>
+    			<span class="pagination__next">Next Page<svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.4243 5.53572C20.6586 5.3014 20.6586 4.9215 20.4243 4.68719L16.6059 0.868811C16.3716 0.634496 15.9917 0.634496 15.7574 0.868811C15.523 1.10313 15.523 1.48302 15.7574 1.71734L19.1515 5.11145L15.7574 8.50556C15.523 8.73988 15.523 9.11978 15.7574 9.35409C15.9917 9.58841 16.3716 9.58841 16.6059 9.35409L20.4243 5.53572ZM-5.2608e-08 5.71145L20 5.71145L20 4.51145L5.2608e-08 4.51145L-5.2608e-08 5.71145Z" fill="#3B2552"/>
+</svg></span>
   			{% endif %}	
 		</div>
+	</div>
 
 	</section>
 

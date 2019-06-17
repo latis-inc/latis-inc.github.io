@@ -14,11 +14,11 @@
 	}
 
 	@include media-breakpoint-only(lg) {
-		padding: 60px 0 69px 0;
+		padding: 60px 0 46px 0;
 	}
 
 	@include media-breakpoint-only(xl) {
-		padding: 60px 0 69px 0;
+		padding: 60px 0 46px 0;
 	}
 	
 	margin: 0;
@@ -31,7 +31,7 @@
 	    .section__item{
 	    	@include make-col(10);
 	    	font-family: 'Rubik-Bold', sans-serif;
-	    	@include fonts(45px, 700, auto, #000000);
+	    	@include fonts(25px, 700, auto, #3B2552);
 
 	    	@include media-breakpoint-only(xs) {
 	    		@include make-col(11);
@@ -81,30 +81,29 @@
 
 	    	@include media-breakpoint-only(lg) {
 	    		//@include make-col(4);
-	    		@include make-col(3.9);
+	    		@include make-col(3.81);
 	    	}
 
 	    	@include media-breakpoint-only(xl) {
-	    		@include make-col(3.9);
+	    		@include make-col(3.81);
 	    	}
-	    	margin-bottom: 40px;
+	    	margin-bottom: 20px;
 	    	display: block;
+	    	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 
-	    	/*&:nth-last-child(2){
-	    		margin-bottom: 0;
-	    	}*/
 	    	.section__post-img{
 	    		width: 100%;
 	    		height: 151px;
-	    		margin-bottom: 15px;
+	    		margin-bottom: 12px;
 	    		object-fit: cover;
 	    	}
 
 	    	.section__post-time{
 	    		@include flexbox( row, flex-start, center);
 	    		margin-bottom: 12px;
-	    		font-family: 'Roboto-Thin', sans-serif;
-	    		@include fonts(13px, 100, 25px, #000000);
+	    		padding: 0 23px;
+	    		font-family: 'Roboto-Light', sans-serif;
+	    		@include fonts(12px, 300, 25px, #000000);
 
 		    		.section__img-clock{
 						padding-right: 5px;
@@ -112,47 +111,86 @@
 	    		}
 
 	    	.section__post-name{
-	    		margin-bottom: 8px;
-	    		font-family: 'Rubik-Bold', sans-serif;
-	    		@include fonts(17px, 700, auto, #3B2552);
+	    		margin-bottom: 5px;
+	    		padding: 0 23px;
+	    		font-family: 'Rubik', sans-serif;
+	    		@include fonts(17px, 600, 20px, #000000);
 	    	}
 
 	    	.section__post-excerpt{
-	    		font-family: 'Roboto-Light', sans-serif;
+	    		font-family: 'Roboto', sans-serif;
 	    		@include fonts(14px, 300, 24px, #000000);
 	    		word-wrap: break-word;
+	    		margin-bottom: 16px;
+	    		padding: 0 23px;
+	    	}
+
+	    	.section__read-more{
+	    		display: block;
+	    		width: 100%;
+	    		padding: 0 23px;
+	    		margin-bottom: 26px;
+	    		font-family: 'Rubik', sans-serif;
+	    		@include fonts(15px, 600, 20px, #3B2552);
+
+	    		svg{
+	    			margin-left: 10px; 
+	    		}
 	    	}
 	    }
 	}
-
 	.pagination{
+		max-width: 950px;
+		@include make-row();
+		margin: 0 auto;
+
+	}
+	.pagination__item{
+		@include make-col(12);
 		padding: 0;
-		margin: 0;
-		@include flexbox(row, center, center);
+		margin: 0 auto;
+		@include flexbox(row, space-between, center);
 		font-family: 'Roboto-light', sans-serif;
 		@include fonts(16px, 400, auto, #000000);
 
+		@include media-breakpoint-only(xs) {
+	    	margin-top: 40px;
+	    	@include make-col(11);
+	    }
+
+		@include media-breakpoint-only(sm) {
+	    	margin-top: 40px;
+	    	@include make-col(10);
+	    }
+
 		@include media-breakpoint-only(md) {
 	    	margin-top: 40px;
+	    	@include make-col(10);
 	    }
 
 		@include media-breakpoint-only(lg) {
 	    	margin-top: 40px;
+	    	@include make-col(12);
 	    }
 
 		@include media-breakpoint-only(xl) {
 	    	margin-top: 40px;
+	    	@include make-col(12);
+
+
 	    }
 
 		.pagination__previous,
 		.pagination__previous-link{
-			width: 80px;
-			height: 40px;
+			font-family: 'Rubik', sans-serif;
+			@include fonts(15px, 600, 20px, rgba(0, 0, 0, 1));	
 			padding: 0;
 			margin: 0;
-			@include flexbox(column, center, center);
-			border: 1px solid #BFBFBF;
-			border-radius: 40px 0 0 40px;
+			@include flexbox(row, center, center);
+
+			svg{
+				margin-right: 10px; 
+			}
 		}
 
 		.pagination__page-number{
@@ -160,23 +198,32 @@
 			height: 40px;
 			@include flexbox(row, center, center);
 			border: 1px solid #BFBFBF;
+					display: none;
 		}
 
 		.pagination__next,
 		.pagination__previous-next{
-			width: 80px;
+			font-family: 'Rubik', sans-serif;
+			@include fonts(15px, 600, 20px, rgba(0, 0, 0, 1));	
 			height: 40px;
 			padding: 0;
 			margin: 0;
-			@include flexbox(column, center, center);
-			border: 1px solid #BFBFBF;
-			border-radius: 0 40px 40px 0px;
+			@include flexbox(row, center, center);
+
+			svg{
+				margin-left: 10px; 
+			}
 		}
 
 		.pagination__previous-link,
 		.pagination__previous-next{
-			color: #7AACDE;
+			font-family: 'Rubik', sans-serif;
+	    	@include fonts(15px, 600, 20px, rgba(0, 0, 0, 0.4));
 			cursor: pointer;
+
+			svg{
+				opacity: 0.4;
+			}
 		}
 
 
@@ -199,11 +246,11 @@
 	}
 
 	@include media-breakpoint-only(lg) {
-		padding: 60px 0 60px 0;
+		padding: 60px 0 46px 0;
 	}
 
 	@include media-breakpoint-only(xl) {
-		padding: 60px 0 60px 0;
+		padding: 60px 0 46px 0;
 	}
 	
 	margin: 0;
@@ -242,24 +289,24 @@
 
 			.section__post-name{
 				width: 100%;
-				padding-bottom: 10px;
+				margin-bottom: 19px;
 				font-family: 'Rubik-Bold', sans-serif;
-			    @include fonts(30px, 700, auto, #000000);
+			    @include fonts(25px, 700, auto, #3B2552);
 			}
 
 			.section__post-img{
 				max-width: 100%;
 				height: auto;
 				object-fit: cover;
-				margin-bottom: 15px;
+				margin-bottom: 32px;
 			}
 
 			.section__post-time{
 				display: block;
 				width: 100%;
-				margin-bottom: 8px;
-				font-family: 'Roboto-Regular', sans-serif;
-				@include fonts(13px, 100, 25px, rgba(35, 31, 32, 0.5));
+				margin-bottom: 29px;
+				font-family: 'Roboto-Light', sans-serif;
+				@include fonts(12px, 300, 25px, rgba(35, 31, 32, 0.5));
 				@include flexbox(row, flex-start, center);
 
 				.section__img-clock{
@@ -269,7 +316,7 @@
 
 			.section__post-content{
 				font-family: 'Roboto-Light', sans-serif;
-        		@include fonts(14px, 300, 24px, #000000);
+        		@include fonts(14px, 300, 24px, #231F20);
         		margin-bottom: 30px;
 			}
 
@@ -299,7 +346,7 @@
 	    	}
 	    	height: 190px;
 	    	padding: 28px 0;
-	    	margin-top: 73px;
+	    	margin-top: 98px;
 	    	border: 1px solid #E4E4E4;
 	    	@include flexbox(column,flex-start, center);
 			.section__social-link{
