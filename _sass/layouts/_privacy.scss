@@ -1,0 +1,133 @@
+.section_page_privacy{
+	@include media-breakpoint-only(xs) {
+		margin: 0 !important;
+		padding: 90px 0 48px 0;	
+	}
+
+	@include media-breakpoint-only(sm) {
+		margin: 0 !important;
+		padding: 90px 0 48px 0;
+	}
+
+	@include media-breakpoint-only(md) {
+		padding: 20px 0 60px 0;
+	}
+
+	@include media-breakpoint-only(lg) {
+		padding: 20px 0 46px 0;
+	}
+
+	@include media-breakpoint-only(xl) {
+		padding: 20px 0 59px 0;
+	}
+
+	margin: 0;
+
+	.breadcrumbs{
+		@include make-row();
+		max-width: 1140px;
+		justify-content: center;
+		@include media-breakpoint-only(xs) {
+			margin: 0px auto 40px auto;	
+		}
+
+		@include media-breakpoint-only(sm) {
+			margin: 0px auto 40px auto;
+		}
+
+		@include media-breakpoint-only(md) {
+			margin: 0px auto 60px auto;
+		}
+
+		@include media-breakpoint-only(lg) {
+			margin: 0px auto 80px auto;
+		}
+
+		@include media-breakpoint-only(xl) {
+			margin: 0px auto 80px auto;
+		}
+
+		.breadcrumbs__item{
+			@include make-col(10);
+			font-family: 'Roboto-Light', sans-serif;
+			@include fonts(12px, 300, auto, #3B2552);
+
+			@include media-breakpoint-only(xs) {
+	    		@include make-col(11);
+	    	}
+
+	    	@include media-breakpoint-only(sm) {
+	    		@include make-col(11);
+	    	}
+
+			.breadcrumbs__link{
+				color: #000000;
+				opacity: 0.5;
+			}
+		}
+	}
+
+	.section__flex{
+		@include make-row();
+		max-width: 1140px;
+		padding: 0;
+		margin: 0 auto;
+		justify-content: center;
+
+		.section__post-name{
+			@include make-col(10);
+			width: 100%;
+			margin-bottom: 19px;
+
+			@include media-breakpoint-only(xs) {
+				@include make-col(11);
+			}
+
+			@include media-breakpoint-only(sm) {
+				@include make-col(11);
+			}
+
+			@include media-breakpoint-only(md) {
+				@include make-col(10);
+			}
+
+			@include media-breakpoint-only(lg) {
+				@include make-col(8);
+			}
+
+			@include media-breakpoint-only(xl) {
+				@include make-col(8);
+			}
+
+			.section__item{
+				font-family: 'Rubik-Bold', sans-serif;
+				@include fonts(25px, 700, auto, #3B2552);
+			}
+		}
+
+		.section__content{
+			word-break: break-word;
+			font-family: 'Roboto-Light', sans-serif;
+        	@include fonts(14px, 300, 24px, #231F20);
+        	@include media-breakpoint-only(xs) {
+				@include make-col(11);
+			}
+
+			@include media-breakpoint-only(sm) {
+				@include make-col(11);
+			}
+
+			@include media-breakpoint-only(md) {
+				@include make-col(10);
+			}
+
+			@include media-breakpoint-only(lg) {
+				@include make-col(8);
+			}
+
+			@include media-breakpoint-only(xl) {
+				@include make-col(8);
+			}
+		}
+	}
+}

@@ -114,6 +114,7 @@ body{
                     @include flexbox(row, flex-end, center);
 
                     .nav__item{
+                        border: 1px solid rgba(0,0,0,0);
                         margin-left: 68px;
                         padding: 0;
                         list-style: none;
@@ -123,8 +124,14 @@ body{
                         }
 
                         .nav__link{
+                            border: 1px solid rgba(0,0,0,0);
                             font-family: 'Roboto-Light', sans-serif;
+                            padding-top: 2px;
                             @include fonts(12px, 300, 24px, #000000);
+                        }
+
+                        &:hover{
+                            border-bottom: 2px solid rgb(50, 26, 129);
                         }
                     }
                 }
