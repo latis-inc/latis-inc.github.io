@@ -40,5 +40,3 @@ fields:
 - type: text
   name: excerpt
   label: excerpt
-pages:
-- _posts/2019-06-18-test.md
