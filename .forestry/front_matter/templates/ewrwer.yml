@@ -1,4 +1,9 @@
 ---
 label: ewrwer
 hide_body: false
-fields: []
+fields:
+- name: file
+  type: file
+  config:
+    maxSize: 250
+  label: file
