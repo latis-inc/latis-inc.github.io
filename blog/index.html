@@ -9,11 +9,13 @@ title: 'Latis|Blog'
 
 ---
 
-
 <section class="section section_page_blog">
-		<div class="section__name-page">
-			<h1 class="section__item">Blog</h1>
-		</div>
+	<div class="breadcrumbs">
+		{% include breadcrumbs.html %}
+	</div>
+	<div class="section__name-page">
+		<h1 class="section__item">Blog</h1>
+	</div>
 		<div class="section__flex">
 			<div class="section__item">
 			{% for post in paginator.posts %}
