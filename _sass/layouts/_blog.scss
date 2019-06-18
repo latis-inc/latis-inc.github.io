@@ -14,11 +14,11 @@
 	}
 
 	@include media-breakpoint-only(lg) {
-		padding: 60px 0 46px 0;
+		padding: 20px 0 46px 0;
 	}
 
 	@include media-breakpoint-only(xl) {
-		padding: 60px 0 46px 0;
+		padding: 20px 0 46px 0;
 	}
 	
 	margin: 0;
@@ -26,7 +26,7 @@
 		@include make-row();
 		max-width: 1140px;
 		justify-content: center;
-		margin: 0px auto 30px auto;
+		margin: 0px auto 80px auto;
 
 		.breadcrumbs__item{
 			@include make-col(10);
@@ -284,11 +284,11 @@
 	}
 
 	@include media-breakpoint-only(lg) {
-		padding: 60px 0 46px 0;
+		padding: 20px 0 46px 0;
 	}
 
 	@include media-breakpoint-only(xl) {
-		padding: 60px 0 59px 0;
+		padding: 20px 0 59px 0;
 	}
 	
 	margin: 0;
@@ -297,7 +297,7 @@
 		@include make-row();
 		max-width: 1140px;
 		justify-content: center;
-		margin: 0px auto 30px auto;
+		margin: 0px auto 80px auto;
 
 		.breadcrumbs__item{
 			@include make-col(10);
