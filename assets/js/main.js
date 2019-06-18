@@ -399,8 +399,8 @@ if(str.search(/blog/i) != -1){
     itemPageBlog.innerHTML = itemPageBlog.innerHTML + '<div class="section__post-blog" style="padding: 0; margin: 0; box-shadow: none"></div>';
   }
 }
-  document.getElementsByClassName('nav__link_blog')[0].style.borderBottom = '2px solid #321A81';
-  document.getElementsByClassName('nav__link_blog')[0].style.paddingBottom = '5px';
+  document.getElementsByClassName('nav__item_blog')[0].style.borderBottom = '2px solid #321A81';
+  //document.getElementsByClassName('nav__item_blog')[0].style.paddingBottom = '5px';
 }
 
 if(str.search(/privacy-policy/i) != -1 || str.search(/terms-and-conditions/i) != -1){
