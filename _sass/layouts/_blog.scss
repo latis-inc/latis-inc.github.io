@@ -1,16 +1,16 @@
 .section_page_blog{
 	@include media-breakpoint-only(xs) {
 		margin: 0 !important;
-		padding: 118px 0 48px 0;	
+		padding: 90px 0 48px 0;	
 	}
-/*-20px отнял во всех padding*/
+
 	@include media-breakpoint-only(sm) {
 		margin: 0 !important;
-		padding: 118px 0 48px 0;
+		padding: 90px 0 48px 0;
 	}
 
 	@include media-breakpoint-only(md) {
-		padding: 60px 0 60px 0;
+		padding: 20px 0 60px 0;
 	}
 
 	@include media-breakpoint-only(lg) {
@@ -26,12 +26,34 @@
 		@include make-row();
 		max-width: 1140px;
 		justify-content: center;
-		margin: 0px auto 80px auto;
+		@include media-breakpoint-only(xs) {
+			margin: 0px auto 40px auto;	
+		}
+
+		@include media-breakpoint-only(sm) {
+			margin: 0px auto 40px auto;
+		}
+
+		@include media-breakpoint-only(md) {
+			margin: 0px auto 60px auto;
+		}
+
+		@include media-breakpoint-only(lg) {
+			margin: 0px auto 80px auto;
+		}
+
+		@include media-breakpoint-only(xl) {
+			margin: 0px auto 80px auto;
+		}
 
 		.breadcrumbs__item{
 			@include make-col(10);
 			font-family: 'Roboto-Light', sans-serif;
 			@include fonts(12px, 300, auto, #3B2552);
+
+			@include media-breakpoint-only(xs) {
+	    		@include make-col(11);
+	    	}
 
 			.breadcrumbs__link{
 				color: #000000;
@@ -271,16 +293,16 @@
 .section__single{
 	@include media-breakpoint-only(xs) {
 		margin: 0 !important;
-		padding: 118px 0 48px 0;	
+		padding: 90px 0 48px 0;	
 	}
 
 	@include media-breakpoint-only(sm) {
 		margin: 0 !important;
-		padding: 118px 0 48px 0;
+		padding: 90px 0 48px 0;
 	}
 
 	@include media-breakpoint-only(md) {
-		padding: 60px 0 60px 0;
+		padding: 20px 0 60px 0;
 	}
 
 	@include media-breakpoint-only(lg) {
@@ -297,12 +319,38 @@
 		@include make-row();
 		max-width: 1140px;
 		justify-content: center;
-		margin: 0px auto 80px auto;
+		@include media-breakpoint-only(xs) {
+			margin: 0px auto 40px auto;	
+		}
+
+		@include media-breakpoint-only(sm) {
+			margin: 0px auto 40px auto;
+		}
+
+		@include media-breakpoint-only(md) {
+			margin: 0px auto 60px auto;
+		}
+
+		@include media-breakpoint-only(lg) {
+			margin: 0px auto 80px auto;
+		}
+
+		@include media-breakpoint-only(xl) {
+			margin: 0px auto 80px auto;
+		}
 
 		.breadcrumbs__item{
 			@include make-col(10);
 			font-family: 'Roboto-Light', sans-serif;
 			@include fonts(12px, 300, auto, #3B2552);
+
+			@include media-breakpoint-only(xs) {
+	    		@include make-col(11);
+	    	}
+
+	    	@include media-breakpoint-only(sm) {
+	    		@include make-col(11);
+	    	}
 
 			.breadcrumbs__link{
 				color: #000000;
