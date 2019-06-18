@@ -38,6 +38,7 @@ pagination:
   sort_reverse: true
 
 
+permalink: "/blog/:title"
 
 
 

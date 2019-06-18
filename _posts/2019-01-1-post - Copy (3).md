@@ -1,7 +1,6 @@
 ---
 layout: single
 title: "123"
-permalink: /blog/:title
 
 
 keyword: Coalition Space, Office for Rent
