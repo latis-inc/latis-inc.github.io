@@ -400,7 +400,21 @@ if(str.search(/blog/i) != -1){
   }
 }
   document.getElementsByClassName('nav__link_blog')[0].style.borderBottom = '2px solid #321A81';
-  document.getElementsByClassName('nav__link_blog')[0].style.paddingBottom = '4px';
+  document.getElementsByClassName('nav__link_blog')[0].style.paddingBottom = '5px';
+}
+
+if(str.search(/privacy-policy/i) != -1 || str.search(/terms-and-conditions/i) != -1){
+
+  var scrollHeight = Math.max(
+  document.body.scrollHeight, document.documentElement.scrollHeight,
+  document.body.offsetHeight, document.documentElement.offsetHeight,
+  document.body.clientHeight, document.documentElement.clientHeight
+  );
+
+  if(scrollHeight <= document.documentElement.clientHeight){
+    document.querySelector('footer').style.position = 'absolute';
+    document.querySelector('footer').style.top = 'calc(100vh - 41px)';
+  }
 }
 
 });

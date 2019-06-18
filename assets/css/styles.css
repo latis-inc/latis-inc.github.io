@@ -2815,17 +2815,22 @@ body {
           justify-content: flex-end;
           align-items: center; }
           .wrap .header .header__flex-container .navbar .nav .nav__item {
+            border: 1px solid rgba(0, 0, 0, 0);
             margin-left: 68px;
             padding: 0;
             list-style: none; }
             .wrap .header .header__flex-container .navbar .nav .nav__item:first-child {
               margin: 0; }
             .wrap .header .header__flex-container .navbar .nav .nav__item .nav__link {
+              border: 1px solid rgba(0, 0, 0, 0);
               font-family: 'Roboto-Light', sans-serif;
+              padding-top: 2px;
               font-size: 12px;
               font-weight: 300;
               line-height: 24px;
               color: #000000; }
+            .wrap .header .header__flex-container .navbar .nav .nav__item:hover {
+              border-bottom: 2px solid #321a81; }
       .wrap .header .header__flex-container .header__burger {
         display: none; }
         .wrap .header .header__flex-container .header__burger .header__btn-mobile-menu {
@@ -3862,6 +3867,134 @@ input, a, button, select, div, textarea {
           opacity: 0.8; }
       .section__single .section__flex .section__link-vertical .section__social-link:last-child .section__social-img {
         width: 24px; }
+
+.section_page_privacy {
+  margin: 0; }
+  @media (max-width: 575.98px) {
+    .section_page_privacy {
+      margin: 0 !important;
+      padding: 90px 0 48px 0; } }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .section_page_privacy {
+      margin: 0 !important;
+      padding: 90px 0 48px 0; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .section_page_privacy {
+      padding: 20px 0 60px 0; } }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .section_page_privacy {
+      padding: 20px 0 46px 0; } }
+  @media (min-width: 1200px) {
+    .section_page_privacy {
+      padding: 20px 0 59px 0; } }
+  .section_page_privacy .breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    max-width: 1140px;
+    justify-content: center; }
+    @media (max-width: 575.98px) {
+      .section_page_privacy .breadcrumbs {
+        margin: 0px auto 40px auto; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .section_page_privacy .breadcrumbs {
+        margin: 0px auto 40px auto; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .section_page_privacy .breadcrumbs {
+        margin: 0px auto 60px auto; } }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .section_page_privacy .breadcrumbs {
+        margin: 0px auto 80px auto; } }
+    @media (min-width: 1200px) {
+      .section_page_privacy .breadcrumbs {
+        margin: 0px auto 80px auto; } }
+    .section_page_privacy .breadcrumbs .breadcrumbs__item {
+      flex: 0 0 83.3333333333%;
+      max-width: 83.3333333333%;
+      font-family: 'Roboto-Light', sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: auto;
+      color: #3B2552; }
+      @media (max-width: 575.98px) {
+        .section_page_privacy .breadcrumbs .breadcrumbs__item {
+          flex: 0 0 91.6666666667%;
+          max-width: 91.6666666667%; } }
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        .section_page_privacy .breadcrumbs .breadcrumbs__item {
+          flex: 0 0 91.6666666667%;
+          max-width: 91.6666666667%; } }
+      .section_page_privacy .breadcrumbs .breadcrumbs__item .breadcrumbs__link {
+        color: #000000;
+        opacity: 0.5; }
+  .section_page_privacy .section__flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    max-width: 1140px;
+    padding: 0;
+    margin: 0 auto;
+    justify-content: center; }
+    .section_page_privacy .section__flex .section__post-name {
+      flex: 0 0 83.3333333333%;
+      max-width: 83.3333333333%;
+      width: 100%;
+      margin-bottom: 19px; }
+      @media (max-width: 575.98px) {
+        .section_page_privacy .section__flex .section__post-name {
+          flex: 0 0 91.6666666667%;
+          max-width: 91.6666666667%; } }
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        .section_page_privacy .section__flex .section__post-name {
+          flex: 0 0 91.6666666667%;
+          max-width: 91.6666666667%; } }
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .section_page_privacy .section__flex .section__post-name {
+          flex: 0 0 83.3333333333%;
+          max-width: 83.3333333333%; } }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .section_page_privacy .section__flex .section__post-name {
+          flex: 0 0 66.6666666667%;
+          max-width: 66.6666666667%; } }
+      @media (min-width: 1200px) {
+        .section_page_privacy .section__flex .section__post-name {
+          flex: 0 0 66.6666666667%;
+          max-width: 66.6666666667%; } }
+      .section_page_privacy .section__flex .section__post-name .section__item {
+        font-family: 'Rubik-Bold', sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: auto;
+        color: #3B2552; }
+    .section_page_privacy .section__flex .section__content {
+      word-break: break-word;
+      font-family: 'Roboto-Light', sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px;
+      color: #231F20; }
+      @media (max-width: 575.98px) {
+        .section_page_privacy .section__flex .section__content {
+          flex: 0 0 91.6666666667%;
+          max-width: 91.6666666667%; } }
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        .section_page_privacy .section__flex .section__content {
+          flex: 0 0 91.6666666667%;
+          max-width: 91.6666666667%; } }
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .section_page_privacy .section__flex .section__content {
+          flex: 0 0 83.3333333333%;
+          max-width: 83.3333333333%; } }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .section_page_privacy .section__flex .section__content {
+          flex: 0 0 66.6666666667%;
+          max-width: 66.6666666667%; } }
+      @media (min-width: 1200px) {
+        .section_page_privacy .section__flex .section__content {
+          flex: 0 0 66.6666666667%;
+          max-width: 66.6666666667%; } }
 
 @media (max-width: 767.98px) {
   .header {
