@@ -2815,14 +2815,15 @@ body {
           justify-content: flex-end;
           align-items: center; }
           .wrap .header .header__flex-container .navbar .nav .nav__item {
-            border: 1px solid rgba(0, 0, 0, 0);
+            border: 2px solid rgba(0, 0, 0, 0);
             margin-left: 68px;
             padding: 0;
-            list-style: none; }
+            list-style: none;
+            transition: all 0.3s; }
             .wrap .header .header__flex-container .navbar .nav .nav__item:first-child {
               margin: 0; }
             .wrap .header .header__flex-container .navbar .nav .nav__item .nav__link {
-              border: 1px solid rgba(0, 0, 0, 0);
+              border: 2px solid rgba(0, 0, 0, 0);
               font-family: 'Roboto-Light', sans-serif;
               padding-top: 2px;
               font-size: 12px;
@@ -3507,7 +3508,8 @@ input, a, button, select, div, textarea {
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
       -ms-border-radius: 2px;
-      border-radius: 2px; }
+      border-radius: 2px;
+      transition: 0.3s; }
       @media (max-width: 575.98px) {
         .section_page_blog .section__flex .section__post-blog {
           flex: 0 0 100%;
@@ -3687,7 +3689,8 @@ input, a, button, select, div, textarea {
       font-weight: 600;
       line-height: 20px;
       color: #3b2552;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: all 0.3s; }
       .section_page_blog .pagination__item .pagination__previous-link svg,
       .section_page_blog .pagination__item .pagination__previous-next svg {
         opacity: 0.4;
@@ -3840,7 +3843,8 @@ input, a, button, select, div, textarea {
           line-height: 16px;
           color: #000000; }
         .section__single .section__flex .section__single-post .section__link-horizontal .section__social-link {
-          margin-left: 30px; }
+          margin-left: 30px;
+          transition: all 0.3s; }
           .section__single .section__flex .section__single-post .section__link-horizontal .section__social-link:hover {
             opacity: 0.8; }
         .section__single .section__flex .section__single-post .section__link-horizontal .section__social-link:last-child .section__social-img {
@@ -3860,7 +3864,8 @@ input, a, button, select, div, textarea {
         .section__single .section__flex .section__link-vertical {
           display: none; } }
       .section__single .section__flex .section__link-vertical .section__social-link {
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        transition: all 0.3s; }
         .section__single .section__flex .section__link-vertical .section__social-link:last-child {
           margin-bottom: 100px; }
         .section__single .section__flex .section__link-vertical .section__social-link:hover {
