@@ -41,4 +41,4 @@ fields:
   name: excerpt
   label: excerpt
 pages:
-- _posts/test.md
+- _posts/2019-06-18-test.md
