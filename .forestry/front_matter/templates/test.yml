@@ -41,3 +41,5 @@ fields:
 - type: textarea
   name: excerpt
   label: excerpt
+pages:
+- _posts/sdfsdf.md
