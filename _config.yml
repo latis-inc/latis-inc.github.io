@@ -13,22 +13,37 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: Latis, Inc.
+email: info@latis.co
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+  Compliance is Hard. Let's Tackle it Together.
+baseurl: # the subpath of your site, e.g. /blog
+
+url: http://127.0.0.1:4000 # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: TODO
+github_username:  latis-inc
 
 # Build settings
 markdown: kramdown
 theme: minima
-plugins:
-  - jekyll-feed
+plugins: [ 'jekyll-feed']
+
+plugins: [jekyll-paginate-v2]
+pagination:
+  enabled: true
+  per_page: 6
+  category: 
+  sort_reverse: true
+
+
+permalink: "/blog/:title"
+
+# defaults:
+#   - scope:
+#       path: "file"
+#     values:
+#       pdf: true
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

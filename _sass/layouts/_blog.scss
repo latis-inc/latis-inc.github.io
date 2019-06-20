@@ -1,88 +1,365 @@
 .section_page_blog{
-	margin: 82px 0;
+	@include media-breakpoint-only(xs) {
+		margin: 0 !important;
+		padding: 90px 0 48px 0;	
+	}
+
+	@include media-breakpoint-only(sm) {
+		margin: 0 !important;
+		padding: 90px 0 48px 0;
+	}
+
+	@include media-breakpoint-only(md) {
+		padding: 20px 0 60px 0;
+	}
+
+	@include media-breakpoint-only(lg) {
+		padding: 20px 0 46px 0;
+	}
+
+	@include media-breakpoint-only(xl) {
+		padding: 20px 0 46px 0;
+	}
+	
+	margin: 0;
+	.breadcrumbs{
+		@include make-row();
+		max-width: 1140px;
+		justify-content: center;
+		@include media-breakpoint-only(xs) {
+			margin: 0px auto 40px auto;	
+		}
+
+		@include media-breakpoint-only(sm) {
+			margin: 0px auto 40px auto;
+		}
+
+		@include media-breakpoint-only(md) {
+			margin: 0px auto 60px auto;
+		}
+
+		@include media-breakpoint-only(lg) {
+			margin: 0px auto 80px auto;
+		}
+
+		@include media-breakpoint-only(xl) {
+			margin: 0px auto 80px auto;
+		}
+
+		.breadcrumbs__item{
+			@include make-col(10);
+			font-family: 'Roboto-Light', sans-serif;
+			@include fonts(12px, 300, auto, #3B2552);
+
+			@include media-breakpoint-only(xs) {
+	    		@include make-col(11);
+	    	}
+
+			.breadcrumbs__link{
+				color: #000000;
+				opacity: 0.5;
+			}
+		}
+	}
+
 	.section__name-page{
 		@include make-row();
-		max-width: 950px;
-		margin: 0px auto 40px auto;
+		max-width: 1140px;
+		margin: 0px auto 30px auto;
 		justify-content: center;
 
 	    .section__item{
-	    	border: 1px solid black;
-	    	@include make-col(12);
+	    	@include make-col(10);
 	    	font-family: 'Rubik-Bold', sans-serif;
-	    	@include fonts(45px, 700, auto, #000000);
+	    	@include fonts(25px, 700, auto, #3B2552);
+
+	    	@include media-breakpoint-only(xs) {
+	    		@include make-col(11);
+	    	}
 	    }
 
 	}
 
 	.section__flex{
 		@include make-row();
-	    max-width: 950px;
+	    max-width: 1140px;
 	    padding: 0;
 	    margin: 0 auto;
-	    justify-content: space-between;
+	    justify-content: center;
 
 	    @include media-breakpoint-only(xs) {
 	    	justify-content: center;
 	    }
 
-	    .section__post-blog{
+	    .section__item{
+	    	@include make-row();
+	    	@include make-col(10);
+	    	justify-content: space-between;
+	    	/*border: 1px solid black;*/
+
 	    	@include media-breakpoint-only(xs) {
 	    		@include make-col(11);
+	    	}
+	    }
+
+	    .section__post-blog{
+	    	@include media-breakpoint-only(xs) {
+	    		@include make-col(12);
 	    		padding: 0;
 	    	}
 
 	    	@include media-breakpoint-only(sm) {
-	    		@include make-col(6);
+	    		@include make-col(5.9);
 	    	}
 
 	    	@include media-breakpoint-only(md) {
-	    		@include make-col(4);
+	    		@include make-col(5.9);
 	    	}
 
 	    	@include media-breakpoint-only(lg) {
-	    		@include make-col(4);
+	    		//@include make-col(4);
+	    		@include make-col(3.81);
 	    	}
 
 	    	@include media-breakpoint-only(xl) {
-	    		@include make-col(4);
-	    		justify-content: space-around;
+	    		@include make-col(3.81);
 	    	}
-
+	    	margin-bottom: 20px;
 	    	display: block;
-	    	margin-bottom: 40px;
-	    	/*padding: 0 10px 0 10px;*/
+	    	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	    	@include border-radius(2px);
+	    	transition: 0.3s;
+
 	    	.section__post-img{
 	    		width: 100%;
 	    		height: 151px;
-	    		margin-bottom: 15px;
+	    		margin-bottom: 12px;
 	    		object-fit: cover;
+	    		@include border-radius(2px);
 	    	}
 
 	    	.section__post-time{
-	    		display: block;
+	    		@include flexbox( row, flex-start, center);
 	    		margin-bottom: 12px;
-	    		font-family: 'Roboto-Thin', sans-serif;
-	    		@include fonts(13px, 100, 25px, #000000);
+	    		padding: 0 23px;
+	    		font-family: 'Roboto-Light', sans-serif;
+	    		@include fonts(12px, 300, 25px, #000000);
+
+		    		.section__img-clock{
+						padding-right: 5px;
+					}
 	    		}
 
 	    	.section__post-name{
-	    		margin-bottom: 8px;
-	    		font-family: 'Rubik-Bold', sans-serif;
-	    		@include fonts(17px, 700, auto, #3B2552);
+	    		margin-bottom: 5px;
+	    		padding: 0 23px;
+	    		font-family: 'Rubik', sans-serif;
+	    		@include fonts(17px, 600, 20px, #000000);
 	    	}
 
 	    	.section__post-excerpt{
-	    		font-family: 'Roboto-Light', sans-serif;
+	    		font-family: 'Roboto', sans-serif;
 	    		@include fonts(14px, 300, 24px, #000000);
 	    		word-wrap: break-word;
+	    		margin-bottom: 16px;
+	    		padding: 0 23px;
+	    	}
+
+	    	.section__read-more{
+	    		display: block;
+	    		width: 100%;
+	    		padding: 0 23px;
+	    		margin-bottom: 26px;
+	    		font-family: 'Rubik', sans-serif;
+	    		@include fonts(15px, 600, 20px, #3B2552);
+
+	    		svg{
+	    			margin-left: 10px; 
+	    		}
+	    	}
+
+	    	&:hover{
+	    		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 	    	}
 	    }
+	}
+	.pagination{
+		max-width: 950px;
+		@include make-row();
+		margin: 0 auto;
+
+	}
+	.pagination__item{
+		@include make-col(12);
+		padding: 0;
+		margin: 0 auto;
+		@include flexbox(row, space-between, center);
+		font-family: 'Roboto-light', sans-serif;
+		@include fonts(16px, 400, auto, #000000);
+
+		@include media-breakpoint-only(xs) {
+	    	margin-top: 40px;
+	    	@include make-col(11);
+	    }
+
+		@include media-breakpoint-only(sm) {
+	    	margin-top: 40px;
+	    	@include make-col(10);
+	    }
+
+		@include media-breakpoint-only(md) {
+	    	margin-top: 40px;
+	    	@include make-col(10);
+	    }
+
+		@include media-breakpoint-only(lg) {
+	    	margin-top: 40px;
+	    	@include make-col(12);
+	    }
+
+		@include media-breakpoint-only(xl) {
+	    	margin-top: 40px;
+	    	@include make-col(12);
+
+
+	    }
+
+		.pagination__previous,
+		.pagination__previous-link{
+			opacity: 0;
+			font-family: 'Rubik', sans-serif;
+			@include fonts(15px, 600, 20px, rgba(0, 0, 0, 1));	
+			padding: 0;
+			margin: 0;
+			@include flexbox(row, center, center);
+
+			svg{
+				margin-right: 10px;
+
+				path{
+						fill: #3b2552;
+					} 
+			}
+
+
+		}
+
+		.pagination__page-number{
+			width: 80px;
+			height: 40px;
+			@include flexbox(row, center, center);
+			border: 1px solid #BFBFBF;
+					display: none;
+		}
+
+		.pagination__next,
+		.pagination__previous-next{
+			opacity: 0;
+			font-family: 'Rubik', sans-serif;
+			@include fonts(15px, 600, 20px, rgba(0, 0, 0, 1));	
+			height: 40px;
+			padding: 0;
+			margin: 0;
+			@include flexbox(row, center, center);
+
+			svg{
+				margin-left: 10px; 
+					path{
+						fill: #3b2552;
+					}
+			}
+		}
+
+		.pagination__previous-link,
+		.pagination__previous-next{
+			opacity: 1;
+			font-family: 'Rubik', sans-serif;
+	    	@include fonts(15px, 600, 20px, rgba(59, 37, 82, 1));	
+			cursor: pointer;
+			transition: all 0.3s;
+
+			svg{
+				opacity: 0.4;
+				fill: rgba(59, 37, 82, 1);
+			}
+
+			&:hover{
+				opacity: 0.8;
+			}
+		}
+
+
 	}
 }
 
 .section__single{
-	margin: 82px 0;
+	@include media-breakpoint-only(xs) {
+		margin: 0 !important;
+		padding: 90px 0 48px 0;	
+	}
+
+	@include media-breakpoint-only(sm) {
+		margin: 0 !important;
+		padding: 90px 0 48px 0;
+	}
+
+	@include media-breakpoint-only(md) {
+		padding: 20px 0 60px 0;
+	}
+
+	@include media-breakpoint-only(lg) {
+		padding: 20px 0 46px 0;
+	}
+
+	@include media-breakpoint-only(xl) {
+		padding: 20px 0 59px 0;
+	}
+	
+	margin: 0;
+
+	.breadcrumbs{
+		@include make-row();
+		max-width: 1140px;
+		justify-content: center;
+		@include media-breakpoint-only(xs) {
+			margin: 0px auto 40px auto;	
+		}
+
+		@include media-breakpoint-only(sm) {
+			margin: 0px auto 40px auto;
+		}
+
+		@include media-breakpoint-only(md) {
+			margin: 0px auto 60px auto;
+		}
+
+		@include media-breakpoint-only(lg) {
+			margin: 0px auto 80px auto;
+		}
+
+		@include media-breakpoint-only(xl) {
+			margin: 0px auto 80px auto;
+		}
+
+		.breadcrumbs__item{
+			@include make-col(10);
+			font-family: 'Roboto-Light', sans-serif;
+			@include fonts(12px, 300, auto, #3B2552);
+
+			@include media-breakpoint-only(xs) {
+	    		@include make-col(11);
+	    	}
+
+	    	@include media-breakpoint-only(sm) {
+	    		@include make-col(11);
+	    	}
+
+			.breadcrumbs__link{
+				color: #000000;
+				opacity: 0.5;
+			}
+		}
+	}
 	.section__flex{
 		@include make-row();
 	    max-width: 1140px;
@@ -118,62 +395,89 @@
 
 			.section__post-name{
 				width: 100%;
-				padding-bottom: 10px;
+				margin-bottom: 19px;
 				font-family: 'Rubik-Bold', sans-serif;
-			    @include fonts(30px, 700, auto, #000000);
+			    @include fonts(25px, 700, auto, #3B2552);
 			}
 
 			.section__post-img{
 				max-width: 100%;
 				height: auto;
 				object-fit: cover;
-				margin-bottom: 30px;
+				margin-bottom: 20px;
 			}
 
 			.section__post-time{
 				display: block;
 				width: 100%;
-				margin-bottom: 8px;
-				font-family: 'Roboto-Regular', sans-serif;
-				@include fonts(13px, 100, 25px, rgba(35, 31, 32, 0.5));
+				margin-bottom: 29px;
+				font-family: 'Roboto-Light', sans-serif;
+				@include fonts(12px, 300, 25px, rgba(35, 31, 32, 0.5));
 				@include flexbox(row, flex-start, center);
+
+				.section__img-clock{
+					padding-right: 5px;
+				}
 			}
 
 			.section__post-content{
 				font-family: 'Roboto-Light', sans-serif;
-        		@include fonts(14px, 300, 24px, #000000);
-        		margin-bottom: 65px;
+        		@include fonts(14px, 300, 24px, #231F20);
+        		margin-bottom: 40px;
 			}
 
 			.section__link-horizontal{
+				@include flexbox(row, flex-start, center);
 				.section__share{
-					font-family: 'Roboto-Regular', sans-serif;
+					font-family: 'Roboto', sans-serif;
 					@include fonts(16px, 400, 16px, #000000);
 				}
 
 				.section__social-link{
 					margin-left: 30px;
+					transition: all 0.3s;
+
+					&:hover{
+						opacity: 0.8;
+					}			
 				}
+
+				.section__social-link:last-child{
+					.section__social-img{
+						width: 24px;
+					}
+				 }
 			}
 		}
 
 		.section__link-vertical{
-	    	@include make-col(1);
+	    	@include make-col(0.7);
 	    	@media screen and (max-width: 768px){
 	    		display: none;
 	    	}
 	    	height: 190px;
 	    	padding: 28px 0;
-	    	margin-top: 73px;
+	    	margin-top: 98px;
 	    	border: 1px solid #E4E4E4;
 	    	@include flexbox(column,flex-start, center);
+
 			.section__social-link{
 				margin-bottom: 30px;
+				transition: all 0.3s;
 				&:last-child{
-					margin-bottom: 0px;
+					margin-bottom: 100px;
+				}
+
+				&:hover{
+					opacity: 0.8;
 				} 
+			}
+
+			.section__social-link:last-child{
+					.section__social-img{
+						width: 24px;
+					}
 			}
 		}
 	}
-
 }

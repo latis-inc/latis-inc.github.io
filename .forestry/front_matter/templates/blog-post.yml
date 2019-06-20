@@ -1,0 +1,42 @@
+---
+label: blog-post
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+  default: single
+- type: text
+  name: title
+  label: title
+- type: text
+  name: keyword
+  label: keyword
+- type: text
+  name: description
+  label: description
+- type: text
+  name: og_title
+  label: og_title
+- type: text
+  name: og_description
+  label: og_description
+- type: text
+  name: og_type
+  label: og_type
+- type: file
+  name: og_image
+  label: og_image
+- type: text
+  name: robots_content
+  label: robots_content
+  default: index, follow
+- type: text
+  name: image_alt
+  label: image_alt
+- type: file
+  name: image
+  label: image
+- type: text
+  name: excerpt
+  label: excerpt

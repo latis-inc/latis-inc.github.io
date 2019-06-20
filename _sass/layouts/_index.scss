@@ -57,13 +57,13 @@ input, a, button, select, div, textarea{
     .section__title{
         margin-bottom: 22px;
         font-family: 'Rubik-Bold', sans-serif;
-        @include fonts(25px, 700, auto, #3B2552);
+        @include fonts(25px, 700, 30px, #3B2552);
     }
 
     .section__call{
         margin-bottom: 27px;
         font-family: 'Roboto-Light', sans-serif;
-        @include fonts(18px, 300, auto, #7AACDE);
+        @include fonts(18px, 300, 21px, #7AACDE);
 }
 
     .section__info{
@@ -114,6 +114,9 @@ input, a, button, select, div, textarea{
     }
 
     .section__input_section_one{
+        -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
         width: 240px;
         height: 35px;
         padding: 0px 10px 0 10px;
@@ -321,7 +324,7 @@ input, a, button, select, div, textarea{
     .section__call{
         font-family: 'Roboto-Thin', sans-serif;
         text-align: center;
-        @include fonts(18px, 100, 18px, #3B2552);
+        @include fonts(18px, 200, 23px, #3B2552);
     }
 
     .section__sign-up{
@@ -329,6 +332,9 @@ input, a, button, select, div, textarea{
     }
 
     .section__input-sign-up{
+         -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
         width: 328px;
         height: 35px;
         padding: 0px 10px 0 10px;
@@ -389,24 +395,29 @@ input, a, button, select, div, textarea{
         @include make-col(3);
         background-color: #ffffff;
         @include flexbox(column, center, center);
-        padding: 38px 33px 32px 33px;
+        padding: 28px 45px 32px 45px;
         
         .popup__image{
-            margin-bottom: 23px;
+            margin: 0 0 19px 0;
+            padding:0;
+            width: 100% !important;
+            height: auto !important;
         }
 
         .popup__title{
+            margin: 0 0 4px 0;
+            padding:0;
             font-family: 'Rubik-Bold', sans-serif;
-            @include fonts(18px, 700, auto, #3B2552);
+            @include fonts(18px, 700, 21px, #3B2552);
             text-align: center;
-            margin-bottom: 5px;
         }
 
         .popup__info{
+            margin: 0 0 10px 0;
+            padding:0;
             font-family: 'Roboto-Light', sans-serif;
             @include fonts(14px, 300, 24px, #000000);
             text-align: center;
-            margin-bottom: 5px;
         }
 
         .popup__btn{
@@ -426,4 +437,13 @@ input, a, button, select, div, textarea{
             }
         }
     }
+}
+
+.section-not-found{
+    background-image: url(../images/404.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
 }

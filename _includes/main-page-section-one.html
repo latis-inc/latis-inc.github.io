@@ -1,15 +1,16 @@
+{% for section in site.data.main-page-one %}
 <section class="section section_one_style">
   <div class="section__flex">
      <div class="section__item">
-        <h2 class="section__title">{{page.section_one_title}}</h2>
-        <p class="section__call">{{page.section_one_call}}</p>
+        <h2 class="section__title">{{section.section_one_title}}</h2>
+        <p class="section__call">{{section.section_one_call}}</p>
         <div class="section__inner-wrap-img">
           <img src="assets/images/Data_analysis_2.png" alt="data analysis" class="section__img section__img_section_one">
         </div>
-        <p class="section__info">{{page.section_one_info}}</p>
-        <form class="section__form-email section__form-email_section_one" action="https://formspree.io/sales@latis.co" method="POST">
-           <input type="email" class="section__input section__input_section_one" placeholder="{{page.section_one_placeholder}}" name="email-section-one">
-           <button class="section__btn section__btn_section_one">{{page.section_one_btn}}</button>
+        <p class="section__info">{{section.section_one_info}}</p>
+        <form class="section__form-email section__form-email_section_one">
+           <input type="email" class="section__input section__input_section_one" placeholder="{{section.section_one_placeholder}}" name="email" required>
+           <button type="submit" class="section__btn section__btn_section_one">{{section.section_one_btn}}</button>
         </form>
      </div>
      <div class="section__item section__item_img_right">
@@ -17,3 +18,4 @@
      </div>
     </div>
 </section>
+{% endfor %}
