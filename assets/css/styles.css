@@ -2962,21 +2962,21 @@ input, a, button, select, div, textarea {
   .section__flex .section__title {
     margin-bottom: 22px;
     font-family: 'Rubik-Bold', sans-serif;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 30px;
     color: #3B2552; }
   .section__flex .section__call {
     margin-bottom: 27px;
     font-family: 'Roboto-Light', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 21px;
     color: #7AACDE; }
   .section__flex .section__info {
     margin-bottom: 35px;
     font-family: 'Roboto-Light', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 24px;
     color: #000000; }
@@ -3004,7 +3004,7 @@ input, a, button, select, div, textarea {
     margin-top: 30px;
     margin-bottom: 8px;
     font-family: 'Roboto-Light', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 24px;
     color: #f000000; }
@@ -3237,14 +3237,14 @@ input, a, button, select, div, textarea {
     margin-bottom: 35px; }
   .section_five_style .section__title {
     text-align: center;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 700;
     line-height: auto;
     color: #3B2552; }
   .section_five_style .section__call {
     font-family: 'Roboto-Thin', sans-serif;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 200;
     line-height: 23px;
     color: #3B2552; }
@@ -3266,10 +3266,6 @@ input, a, button, select, div, textarea {
     -ms-border-radius: 2px;
     border-radius: 2px;
     font-family: 'Roboto-Light', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-    color: #f000000;
     font-size: 12px;
     font-weight: 300;
     line-height: 24px;
@@ -3969,14 +3965,14 @@ input, a, button, select, div, textarea {
           max-width: 66.6666666667%; } }
       .section_page_privacy .section__flex .section__post-name .section__item {
         font-family: 'Rubik-Bold', sans-serif;
-        font-size: 25px;
+        font-size: 28px;
         font-weight: 700;
         line-height: auto;
         color: #3B2552; }
     .section_page_privacy .section__flex .section__content {
       word-break: break-word;
       font-family: 'Roboto-Light', sans-serif;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 300;
       line-height: 24px;
       color: #231F20; }

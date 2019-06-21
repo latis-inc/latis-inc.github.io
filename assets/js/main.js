@@ -389,8 +389,11 @@ if(document.getElementsByClassName('section__btn-sign-up')[0]){
   //const scriptURL = 'https://script.google.com/macros/s/AKfycby3LHSmO14heLdbkEL2QGSHrTLGXfq2-aFx5ksZlWcZ3TLM6TRP/exec'
 
 /*заполнение ряда на странице блог, чтобы элемены правильно позиционровались*/
+
 var str = window.location.pathname;
-if(str.search(/blog/i) != -1){
+
+/*скрыт блог - значит скрыт код js для него (начало)*/
+/*if(str.search(/blog/i) != -1){
   if(document.getElementsByClassName('section_page_blog')[0]){
   var parentPageBlog = document.getElementsByClassName('section_page_blog')[0];
   var flexPageBlog = parentPageBlog.getElementsByClassName('section__flex')[0];
@@ -400,10 +403,10 @@ if(str.search(/blog/i) != -1){
   }
 }
   document.getElementsByClassName('nav__item_blog')[0].style.borderBottom = '2px solid #321A81';
-  //document.getElementsByClassName('nav__item_blog')[0].style.paddingBottom = '5px';
-}
+}*/
+/*скрыт блог - значит скрыт код js для него (конец)*/
 
-if(str.search(/privacy-policy/i) != -1 || str.search(/terms-and-conditions/i) != -1){
+if(str.search(/privacy-policy/i) != -1 || str.search(/terms-and-conditions/i) != -1 || str.search(/blog/i) != -1){
 
   var scrollHeight = Math.max(
   document.body.scrollHeight, document.documentElement.scrollHeight,
