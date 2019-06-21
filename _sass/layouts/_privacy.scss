@@ -101,14 +101,14 @@
 
 			.section__item{
 				font-family: 'Rubik-Bold', sans-serif;
-				@include fonts(25px, 700, auto, #3B2552);
+				@include fonts(28px, 700, auto, #3B2552);
 			}
 		}
 
 		.section__content{
 			word-break: break-word;
 			font-family: 'Roboto-Light', sans-serif;
-        	@include fonts(14px, 300, 24px, #231F20);
+        	@include fonts(16px, 300, 24px, #231F20);
         	@include media-breakpoint-only(xs) {
 				@include make-col(11);
 			}

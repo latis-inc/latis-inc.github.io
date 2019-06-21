@@ -57,19 +57,19 @@ input, a, button, select, div, textarea{
     .section__title{
         margin-bottom: 22px;
         font-family: 'Rubik-Bold', sans-serif;
-        @include fonts(25px, 700, 30px, #3B2552);
+        @include fonts(28px, 700, 30px, #3B2552);
     }
 
     .section__call{
         margin-bottom: 27px;
         font-family: 'Roboto-Light', sans-serif;
-        @include fonts(18px, 300, 21px, #7AACDE);
+        @include fonts(20px, 300, 21px, #7AACDE);
 }
 
     .section__info{
         margin-bottom: 35px;
         font-family: 'Roboto-Light', sans-serif;
-        @include fonts(14px, 300, 24px, #000000);
+        @include fonts(16px, 300, 24px, #000000);
     }
 
     .section__btn_contact_us{
@@ -94,7 +94,7 @@ input, a, button, select, div, textarea{
         margin-top: 30px;
         margin-bottom: 8px;
         font-family: 'Roboto-Light', sans-serif;
-        @include fonts(14px, 300, 24px, #f000000);
+        @include fonts(16px, 300, 24px, #f000000);
     }  
 }
 
@@ -318,13 +318,13 @@ input, a, button, select, div, textarea{
 
     .section__title{
         text-align: center;
-        @include fonts(25px, 700, auto, #3B2552);
+        @include fonts(28px, 700, auto, #3B2552);
     }
 
     .section__call{
         font-family: 'Roboto-Thin', sans-serif;
         text-align: center;
-        @include fonts(18px, 200, 23px, #3B2552);
+        @include fonts(20px, 200, 23px, #3B2552);
     }
 
     .section__sign-up{
@@ -341,7 +341,6 @@ input, a, button, select, div, textarea{
         border: 1px solid #ffffff;
         @include border-radius(2px);
         font-family: 'Roboto-Light', sans-serif;
-        @include fonts(14px, 300, 24px, #f000000);
         @include fonts(12px, 300, 24px, #3B2552);
         @include placeholder(#3B2552);
     }
